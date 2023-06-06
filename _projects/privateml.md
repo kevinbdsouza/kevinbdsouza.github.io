@@ -13,4 +13,4 @@ We extended the private machine learning framework to include higher dimensional
 <img align="center" width=600 height=400 src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/privateml.png?raw=true">
 </p>
 
-Read the <a href="https://kevinbdsouza.files.wordpress.com/2021/07/learning_theory_project.pdf"><u>Report</u></a>.
+Read the <a href="https://drive.google.com/file/d/1jm_QVAdmflFUoyVvNtNJwnYIiqzd_O4J/view?usp=sharing"><u>Report</u></a>.

@@ -15,4 +15,4 @@ Language models have come of age recently with the introduction of Long-Short-Te
 
 Access the <a href="https://github.com/kevinbdsouza/VaeLM"><u>GitHub Repo</u></a>.
 
-Read the <a href="https://kevinbdsouza.files.wordpress.com/2021/11/vae.pdf"><u>Report</u></a>.
+Read the <a href="https://drive.google.com/file/d/1ShOUvSvJVaOOc2kGMPBlki0eMm6PDNAN/view?usp=sharing"><u>Report</u></a>.
