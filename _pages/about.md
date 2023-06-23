@@ -10,7 +10,7 @@ redirect_from:
 
 Hi, welcome to my site!
 
-I am actively looking for roles in the UK, Canada, and the US, and am open to remote options. I'm a canadian citizen, and am eligible for the HPI visa for the UK and the TN visa for the US (no sponsorships for both). Get in touch if you think I'm a good fit for a role or just want to chat about Computational Biology, Drug Discovery and Machine Learning.   
+I am actively looking for roles and am open to remote options. I'm a canadian citizen, and am eligible for the TN visa for the US (no sponsorship). Get in touch if you think I'm a good fit for a role or just want to chat about Computational Biology, Drug Discovery and Machine Learning.   
 
 Previosuly, I was a machine learning engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I used machine learning to understand and design biomolecules. I was involved in multiple projects at Gandeeva including using sequence and structure based Machine Learning to design antibodies, integrating molecular dynamics with protein design tools for protein affinity maturation, and validating state of the art protein interface scoring tools for target discovery. 
 
