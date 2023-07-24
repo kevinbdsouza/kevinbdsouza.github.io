@@ -24,7 +24,7 @@ Given the peculiarities of antibodies, designing them computationally to bind to
 
 In-silico affinity maturation aims to enhance the binding affinity of an antibody that is known to bind to the target. This is primarily achieved by a framework similar to the one shown in Fig. 1.      
 
-<p>
+<p align="center">
 <img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/aff_mat.png?raw=true" width="500">
 </p>
 <p align="center">
