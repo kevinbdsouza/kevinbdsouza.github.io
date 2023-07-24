@@ -14,13 +14,22 @@ From here on I intend to use ML as a singular term for the group of techniques t
 
 Proteins come in many shapes and forms and perform a multitude of functions in the body, and antibodies are one such class of proteins. Antibodies are an important group of proteins that are key players in the workings of immune system. When a foreign protein antigen enters the body, it is broken down into peptide fragments which attach to MHC molecules in the antigen presenting cells. These peptide fragments are then presented to the B-Cells.  The B-Cells where the B-Cell receptors bind to these peptides, create antibodies that bind to the antigen in an epitope specific way. This process is repeated to eventually obtain antibodies that have high affinity and specificity to the antigen in a process called somatic hypermutation. Exactly how somatic hypermutation is able to generate high affinity antibodies to any potential protein antigen is still not fully known, although there are theories [][]. The ability to do this computationally, that is given any protein target, designing antibodies that can bind to it with high affinity, is of extremely high therapeutic relevance. The use of antibodies as therapeutics is relatively under-explored with less than 150 FDA approved antibodies to date.  
 
-While general protein structure prediction from sequence has reached very low RMSD with respect to experimental structures, antibody structure prediction is more challenging due to the presence of highly diverse and flexible loops called complimentarity determining regions (CDRs). Antibodies are Y-shaped molecules with a fixed region called fragment crystallizable (FC) region and two arms which are called fragment antibody binding (FAb) regions. The FAbs are comprised of a constant domain and a variable domain, where the constant domain is relatively conserved across different antibodies and the variable domain shows higher variablity. Most of the variability in the variable domain comes from the CDRs at the tips of these domains that form a dominant part of the paratope that binds to the antigen epitope. Each arm is also segregated into two separate chains, the heavy chain and the light chain, with CDR-H1, H2, H3 in the heavy chain and CDR-L1, L2, L3 in the light chain. Among the 6 CDR regions, CDR-H3 plays the most important role in binding, is the longest and also the most diverse.           
+While general protein structure prediction from sequence has reached very low RMSD with respect to experimental structures, antibody structure prediction is more challenging due to the presence of highly diverse and flexible loops called complimentarity determining regions (CDRs). Antibodies are Y-shaped molecules with a fixed region called fragment crystallizable (FC) region and two arms which are called fragment antibody binding (FAb) regions. The FAbs are comprised of a constant domain and a variable domain, where the constant domain is relatively conserved across different antibodies and the variable domain shows higher variablity. Most of the variability in the variable domain comes from the CDRs at the tips of these domains that form a dominant part of the paratope that binds to the antigen epitope. Each arm is also segregated into two separate chains, the heavy chain and the light chain, with CDR-H1, H2, H3 in the heavy chain and CDR-L1, L2, L3 in the light chain. Among the 6 CDR regions, CDR-H3 plays the most important role in binding, is the longest and also the most diverse.   
+
+Given the peculiarities of antibodies, designing them computationally to bind to a target protein has been challenging. I categorize this broader problem into three questions that differ in their available inputs and end goal. 
+
+a) In-silico affinity maturation
+b) CDR infilling
+c) De novo design    
+
+In-silico affinity maturation aims to enhance the binding affinity of an antibody that is known to bind to the target. This is primarily achieved by a framework similar to the one shown in Fig. 1.      
 
 
 <a href=""><u>Link</u></a>, 
 
 <p align="center">
-<img align="center" src="">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/aff_mat.png?raw=true">
+<em>Framework for in-silico affinity maturation</em>
 </p>
 
 
