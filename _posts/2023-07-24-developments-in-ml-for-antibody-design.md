@@ -18,9 +18,9 @@ While general protein structure prediction from sequence has reached very low RM
 
 Given the peculiarities of antibodies, designing them computationally to bind to a target protein has been challenging. I categorize this broader problem into three questions that differ in their available inputs and end goal. 
 
-a) In-silico affinity maturation
-b) CDR infilling
-c) De novo design    
+* In-silico affinity maturation
+* CDR infilling
+* De novo design    
 
 In-silico affinity maturation aims to enhance the binding affinity of an antibody that is known to bind to the target. This is primarily achieved by a framework similar to the one shown in Fig. 1.      
 
@@ -28,8 +28,8 @@ In-silico affinity maturation aims to enhance the binding affinity of an antibod
 <a href=""><u>Link</u></a>, 
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/aff_mat.png?raw=true">
-<em>Framework for in-silico affinity maturation</em>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/aff_mat.png?raw=true" width="200">
+<em>Figure 1. Framework for in-silico affinity maturation.</em>
 </p>
 
 
