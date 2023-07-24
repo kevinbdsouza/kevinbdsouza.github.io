@@ -26,7 +26,7 @@ In-silico affinity maturation aims to enhance the binding affinity of an antibod
 
 <p align="center">
 <img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/aff_mat.png?raw=true" width="500">
-<em>Figure 1. Framework for in-silico affinity maturation.</em>
+<figcaption align = "center"><em>Figure 1. Framework for in-silico affinity maturation.</em></figcaption>
 </p>
 
 
