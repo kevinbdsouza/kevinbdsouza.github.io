@@ -18,7 +18,7 @@ While general protein structure prediction from sequence has reached very low RM
 <a href="https://www.popsci.com/article/technology/surprising-science-behind-movie-interstellar/"><u>The science behind Interstellar</u></a>, 
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/data_poverty.png?raw=true">
+<img align="center" src="">
 </p>
 
 
