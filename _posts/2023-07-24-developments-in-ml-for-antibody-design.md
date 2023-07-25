@@ -31,15 +31,23 @@ In-silico affinity maturation aims to enhance the binding affinity of antibodies
 <em>Figure 1. Framework for in-silico affinity maturation.</em>
 </p>
 
-The second category pertains to designing alternate CDR regions that bind to an antigen with greater affinity given an existing antibody-antigen complex structure. This is achieved by a framework similar to the one shown in Fig. 2. Existing antibody-antigen complexes are used ad training data to train a model that can predict either the sequence, or the backbone structure, or both simultaneously. Some of the models in this category include MEAN [], the model from Absci [], AntiDesigner [], DiffAb [], Fragment-based method by Sormanni [], C-RefineGNN [], and AbODE []. Some of these methods use diffusion models, some work with partial differential equations (PDEs), and most methods work on top of graphs.  
-  
+The second category pertains to designing alternate CDR regions that bind to an antigen with greater affinity given an existing antibody-antigen complex structure. This is achieved by a framework similar to the one shown in Fig. 2. Existing antibody-antigen complexes are used ad training data to train a model that can predict either the sequence, or the backbone structure, or both simultaneously. Some of the models in this category include MEAN [], the model from Absci [], AntiDesigner [], DiffAb [], Fragment-based method by Sormanni [], C-RefineGNN [], and AbODE []. Some of these methods use diffusion models, some work with partial differential equations (PDEs), and most methods work on top of graphs. CDR evolution in the sequence space is also another class of methods in this category, shown in Fig. 3. These methods use antibody language model log probabilities to chose fitter CDR regions in the sequence space. Examples inlcude methods like IgLM [], AbMAP [], AbLang [], ESM (Kim) [], ReprogBert []. 
+ 
+<p align="center">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill.png?raw=true" width="400"/>
+</p>
+<p align="center">
+<em>Figure 2. CDR sequence/structure infilling scenario.</em>
+</p>
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill.png?raw=true" width="500"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill_2.png?raw=true" width="400"/>
 </p>
 <p align="center">
-<em>Figure 2. CDR infilling scenario.</em>
+<em>Figure 2. CDR sequence evolution scenario.</em>
 </p>
+
+The third category consists of designing the entire antibody from scratch such that it can bind to a given target. While the first category is epitope agnostic, the second and the third categories are epitope specific, that is, the antibody needs to be designed such that it binds to a particular epitope of interest on the antigen. 
 
 In progress. 
 
