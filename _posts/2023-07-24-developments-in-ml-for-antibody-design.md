@@ -52,7 +52,7 @@ The third category consists of designing the entire antibody from scratch such t
 The framework of the antibody can be designed one of three ways. First, use existing framework strcutures from databases like SAbDab. Second, use antibody structure prediction methods to predict the structures of the framework regions in the antibody sequence databases like the observed antibody space (OAS), and third, de novo design the whole framework structure. There are methods that go the third route and try to either diffuse the framework stucture like Ig-VAE [] and PF-ABGEN [] (Fig. 4), or design it using cross-Beta motif rules such as the method by Marcos [].  
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/diffuse.png?raw=true" width="400"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/diffuse.png?raw=true" width="200"/>
 </p>
 <p align="center">
 <em>Figure 4. De novo diffusion of antibody frameworks.</em>
