@@ -73,7 +73,7 @@ Once the best frameworks have been chosen, The CDRs can be diversified using met
 
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_h3.png?raw=true" width="500"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_h3.png?raw=true" width="700"/>
 </p>
 <p align="center">
 <em> <font size="2"> Figure 6. CDR-H3 backbone and sequence diversification. </font> </em>
