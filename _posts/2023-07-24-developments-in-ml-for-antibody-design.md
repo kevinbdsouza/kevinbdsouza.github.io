@@ -58,6 +58,19 @@ The framework of the antibody can be designed one of three ways. First, use exis
 <em> <font size="2"> Figure 4. De novo diffusion of antibody frameworks. </font> </em>
 </p>
 
+Important components of the epitope-specific de novo computational antibody design pipeline are shown in Fig. 5. Designing a reasonable scoring function that can access the quality of the antibody-antigen interface is the first step in this pipeline. Wallner [] has shown in CASP15 that sampling multiple structural models and then using an interface scoring function to filter these results in siginificant improvements in protein complex structure prediction. Models that perform estimation of model accuracy (EMA) and access interface quality are good candidates for such a scoring function, for example, VoroIF-GNN by Venclovas [], MULTICOM_qa by Cheng [], and ModFOLDdock by Adiyaman []. The docking potential from rigid body docking methods like ZDOCK [], HDOCK [], and HADDOCK3 [] can be used to generate thousands of antibody-antigen interfaces for which experimental ground truth exists. The generated poses can then be re-scored using a combination of re-scoring methods like DLAB-Re [], AF2 composite score [], Graphinity [], solvated interaction energy (SIE) [], VoroIF-GNN [], Rosetta energy, and hydrogen bond score. In fact, training a surrogate ML model to learn a composite score directly might also be an option. 
+
+<p align="center">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/pipeline.png?raw=true" width="300"/>
+</p>
+<p align="center">
+<em> <font size="2"> Figure 5. Antibody Design Pipeline. </font> </em>
+</p>
+
+
+
+
+The common issue with desiginig such a scoring function is the scarcity of experimental antibody-antigen complexes. Synthetic data from simulation frameworks such as Absolut!? [] may help, however, experimental validation of such frameworks is still lacking. One solution for data scarcity that involves a feedback loop with experimental testing is a batched bayesian optimization or active learning framework that continualy refines the scoring function after batches of lab testing, before applying the final post-design filters.  
 
 In progress. 
 
