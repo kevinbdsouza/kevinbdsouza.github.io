@@ -61,21 +61,25 @@ The framework of the antibody can be designed one of three ways. First, use exis
 Important components of the epitope-specific de novo computational antibody design pipeline are shown in Fig. 5. Designing a reasonable scoring function that can access the quality of the antibody-antigen interface is the first step in this pipeline. Wallner [] has shown in CASP15 that sampling multiple structural models and then using an interface scoring function to filter these results in siginificant improvements in protein complex structure prediction. Models that perform estimation of model accuracy (EMA) and access interface quality are good candidates for such a scoring function, for example, VoroIF-GNN by Venclovas [], MULTICOM_qa by Cheng [], and ModFOLDdock by Adiyaman []. The docking potential from rigid body docking methods like ZDOCK [], HDOCK [], and HADDOCK3 [] can be used to generate thousands of antibody-antigen interfaces for which experimental ground truth exists. The generated poses can then be re-scored using a combination of re-scoring methods like DLAB-Re [], AF2 composite score [], Graphinity [], solvated interaction energy (SIE) [], VoroIF-GNN [], Rosetta energy, and hydrogen bond score. In fact, training a surrogate ML model to learn a composite score directly might also be an option. 
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/pipeline.png?raw=true" width="600"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/pipeline.png?raw=true" width="700"/>
 </p>
 <p align="center">
-<em> <font size="2"> Figure 5. Antibody Design Pipeline. </font> </em>
+<em> <font size="2"> Figure 5. Antibody design pipeline. </font> </em>
 </p>
 
-Once a reasonable scoring function is designed, the next is to perform framework selection and virtual screening. In order to do this, we first filter redundant, non-human framework sequences and sequences with $$size(indels) > K$$ using ANARCI status []. We can also use $$Redundancy > N$$ to retain sequences as an additional criterion for robustness. Next, we cluster concatenated CDRs on sequences identity into $$K$$ clusters, and further cluster each cluster on the framework minus the CDR-H3 region using alignment and clustering tools like MMseqs2. Once the clustering step is completed, we pick a representative from each CDR cluster and generate structures using antibody folding tools like ABodyBuilder2. This is followed by generating docked poses and scoring using the designed composite scoring function. Finally, we repeat this process for inner framework clusters for the $$N$$ best CDR clusters, and select the top $$L$$ best scoring frameworks. 
+Once a reasonable scoring function is designed, the next is to perform framework selection and virtual screening. In order to do this, we first filter redundant, non-human framework sequences and sequences with $$size(indels) > K$$ using ANARCI status []. We can also use $$Redundancy > N$$ to retain sequences as an additional criterion for robustness. Next, we cluster concatenated CDRs on sequences identity into $$A$$ clusters, and further cluster each cluster on the framework minus the CDR-H3 region using alignment and clustering tools like MMseqs2. Once the clustering step is completed, we pick a representative from each CDR cluster and generate structures using antibody folding tools like ABodyBuilder2. This is followed by generating docked poses and scoring using the designed composite scoring function. Finally, we repeat this process for inner framework clusters for the $$B$$ best CDR clusters, and select the top $$C$$ best scoring frameworks. 
+
+Once the best frameworks have been chosen, The CDRs can be diversified using methods that co-design the structure and sequence given the antibody-antigen pose, like MEAN [], and DiffAb []. We can potentially focus the diversification on the most important CDR for binding which is CDR-H3 as shown in Fig. 6. The diversified CDR-H3 poses are then scored using the surrogate model that predicts the composite score. The common issue with desiginig such a scoring function is the scarcity of experimental antibody-antigen complexes. Synthetic data from simulation frameworks such as Absolut!? [] may help, however, experimental validation of such frameworks is still lacking. One solution for data scarcity that involves a feedback loop with experimental testing is a batched bayesian optimization or active learning framework that continualy refines the scoring function after batches of lab testing, before applying the final post-design filters.
 
 
-
+<p align="center">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_h3.png?raw=true" width="500"/>
+</p>
+<p align="center">
+<em> <font size="2"> Figure 6. CDR-H3 backbone and sequence diversification. </font> </em>
+</p>
  
- 
 
-
-The common issue with desiginig such a scoring function is the scarcity of experimental antibody-antigen complexes. Synthetic data from simulation frameworks such as Absolut!? [] may help, however, experimental validation of such frameworks is still lacking. One solution for data scarcity that involves a feedback loop with experimental testing is a batched bayesian optimization or active learning framework that continualy refines the scoring function after batches of lab testing, before applying the final post-design filters.  
 
 In progress. 
 
