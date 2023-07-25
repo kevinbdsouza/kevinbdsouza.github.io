@@ -55,7 +55,7 @@ The framework of the antibody can be designed one of three ways. First, use exis
 <img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/diffuse.png?raw=true" width="200"/>
 </p>
 <p align="center">
-<em>Figure 4. De novo diffusion of antibody frameworks.</em>
+<em> <font size="1"> Figure 4. De novo diffusion of antibody frameworks. </font> </em>
 </p>
 
 In progress. 
