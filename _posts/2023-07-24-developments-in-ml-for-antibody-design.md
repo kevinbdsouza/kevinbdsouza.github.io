@@ -31,7 +31,7 @@ In-silico affinity maturation aims to enhance the binding affinity of antibodies
 <em>Figure 1. Framework for in-silico affinity maturation.</em>
 </p>
 
-The second category pertains to designing alternate CDR regions that bind to an antigen with greater affinity given an existing antibody-antigen complex structure. This is achieved by a framework similar to the one shown in Fig. 2. Existing antibody-antigen complexes are used ad training data to train a model that can predict either the sequence, or the backbone structure, or both simultaneously. Some of the models in this category include MEAN [], the model from Absci [], AntiDesigner [], DiffAb [], Fragment-based method by Sormanni [], C-RefineGNN [], and AbODE []. Some of these methods use diffusion models, some work with partial differential equations (PDEs), and most methods work on top of graphs. CDR evolution in the sequence space is also another class of methods in this category, shown in Fig. 3. These methods use antibody language model log probabilities to chose fitter CDR regions in the sequence space. Examples inlcude methods like IgLM [], AbMAP [], AbLang [], ESM (Kim) [], ReprogBert []. 
+The second category pertains to designing alternate CDR regions that bind to an antigen with greater affinity given an existing antibody-antigen complex structure. This is achieved by a framework similar to the one shown in Fig. 2. Existing antibody-antigen complexes are used ad training data to train a model that can predict either the sequence, or the backbone structure, or both simultaneously. The methods in this category include MEAN [], the model by Absci [], AntiDesigner [], DiffAb [], Fragment-based method by Sormanni [], C-RefineGNN [], and AbODE []. Some of these methods use diffusion models, some work with partial differential equations (PDEs), and most methods work on top of graphs. CDR evolution in the sequence space is also another class of methods in this category, shown in Fig. 3. These methods use antibody language model log probabilities to chose fitter CDR regions in the sequence space. Examples inlcude methods like IgLM [], AbMAP [], AbLang [], ESM based method by Kim [], and ReprogBert []. 
  
 <p align="center">
 <img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill.png?raw=true" width="400"/>
@@ -44,10 +44,19 @@ The second category pertains to designing alternate CDR regions that bind to an 
 <img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill_2.png?raw=true" width="400"/>
 </p>
 <p align="center">
-<em>Figure 2. CDR sequence evolution scenario.</em>
+<em>Figure 3. CDR sequence evolution scenario.</em>
 </p>
 
-The third category consists of designing the entire antibody from scratch such that it can bind to a given target. While the first category is epitope agnostic, the second and the third categories are epitope specific, that is, the antibody needs to be designed such that it binds to a particular epitope of interest on the antigen. 
+The third category consists of designing the entire antibody from scratch such that it can bind to a given target. While the first category is epitope agnostic, the second and the third categories are epitope specific, that is, the antibody needs to be designed such that it binds to a particular epitope of interest on the antigen. The problem of designing the antibody can be broken down into two subproblems of designing the framework region (Fab minus the hypervariable CDR regions) and designing the CDR regions (The Fc region is same for a given class of antibody in the species and both arms of the antibody can be identical). 
+
+The framework of the antibody can be designed one of three ways. First, use existing framework strcutures from databases like SAbDab. Second, use antibody structure prediction methods to predict the structures of the framework regions in the antibody sequence databases like the observed antibody space (OAS), and third, de novo design the whole framework structure. There are methods that go the third route and try to either diffuse the framework stucture like Ig-VAE [] and PF-ABGEN [] (Fig. 4), or design it using cross-Beta motif rules such as the method by Marcos [].  
+
+<p align="center">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/diffuse.png?raw=true" width="400"/>
+</p>
+<p align="center">
+<em>Figure 4. De novo diffusion of antibody frameworks.</em>
+</p>
 
 In progress. 
 
