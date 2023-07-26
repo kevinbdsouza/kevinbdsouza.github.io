@@ -23,7 +23,6 @@ Work experience
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. The designed protein sequences achieved SOTA success rate when tested in the lab. Gandeeva will use this platform for their future protein affinity maturation campaigns
   * Tested interface scoring tools from CASP15 to drive in-house ppi prediction, which will significantly improve Gandeeva’s target discovery efforts
   * Tested proof-of-concept target-potential binding partner interface recovery by using protein design to suggest favourable mutations on the potential binding partner. This will help Gandeeva recover weak but therapeutically relevant interfaces
-  * Investigated pocket-specific small molecule generative design methods and usability of chemical language models for goal directed molecule generation
   * Provided critical feedback on the in-house active learning+molecular docking workflow for virtual screening
   * **Manager**: Abhishek Mukhopadhyay
 
@@ -64,7 +63,6 @@ Skills
   * Protein Structure, Protein Design, Antibody Engineering, Molecular Dynamics, FEP, Docking, Chromatin Structure, Epigenomics, NGS, Genomics, Transcriptomics, Multiomics, RNA-seq, ChIP-seq, Hi-C, scRNA-seq
 * Softwares
   * OpenMM, Pymol, Chimera, Gromacs, Rosetta, AlphaFold, Schrodinger
-* Computational Chemistry
 * Data Science 
 * Bioinformatics
 * Software Development 
