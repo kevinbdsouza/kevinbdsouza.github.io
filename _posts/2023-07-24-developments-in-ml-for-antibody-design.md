@@ -25,7 +25,7 @@ Given the peculiarities of antibodies, designing them computationally to bind to
 In-silico affinity maturation aims to enhance the binding affinity of antibodies that are known to bind to the target. This is primarily achieved by a framework similar to the one shown in Fig. 1. Representations of BCR repertoires are first learned using either antibody language models or other representation learning techniques. Antibody language models are increasingly becoming powerful at creating useful representations which can then be used for downstream tasks (examples include IgLM [], AbLang []). These representations are then used to train a regression model that predicts the target binding affinity of sequences by using measured experimental data as the ground truth. The trained regression model is then used in an in-silico directed evolution campaign to generate new sequences. The in-silico directed evolution process can take many forms including active learning or bayesian optimization. RESP AI [], the geometric deep learning (GDL) model by Peng [], and the language models assisted bayesian optimization framework by Walsh [] come under this first category.        
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/aff_mat.png?raw=true" width="500"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/aff_mat.png?raw=true" width="400"/>
 </p>
 <p align="center">
 <em> <font size="2"> Figure 1. Framework for in-silico affinity maturation.</font> </em>
