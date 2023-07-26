@@ -34,14 +34,14 @@ In-silico affinity maturation aims to enhance the binding affinity of antibodies
 The second category pertains to designing alternate CDR regions that bind to an antigen with greater affinity given an existing antibody-antigen complex structure. This is achieved by a framework similar to the one shown in Fig. 2. Existing antibody-antigen complexes are used ad training data to train a model that can predict either the sequence, or the backbone structure, or both simultaneously. The methods in this category include MEAN [], the model by Absci [], AntiDesigner [], DiffAb [], Fragment-based method by Sormanni [], C-RefineGNN [], and AbODE []. Some of these methods use diffusion models, some work with partial differential equations (PDEs), and most methods work on top of graphs. CDR evolution in the sequence space is also another class of methods in this category, shown in Fig. 3. These methods use antibody language model log probabilities to chose fitter CDR regions in the sequence space. Examples inlcude methods like IgLM [], AbMAP [], AbLang [], ESM based method by Kim [], and ReprogBert []. 
  
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill.png?raw=true" width="400"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill.png?raw=true" width="300"/>
 </p>
 <p align="center">
 <em> <font size="2"> Figure 2. CDR sequence/structure infilling scenario. </font> </em>
 </p>
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill_2.png?raw=true" width="400"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_infill_2.png?raw=true" width="300"/>
 </p>
 <p align="center">
 <em> <font size="2"> Figure 3. CDR sequence evolution scenario. </font> </em>
@@ -76,10 +76,16 @@ Once the best frameworks have been chosen, The CDRs can be diversified using met
 <img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_h3.png?raw=true" width="700"/>
 </p>
 <p align="center">
-<em> <font size="2"> Figure 6. CDR-H3 backbone and sequence diversification. </font> </em>
+<em> <font size="2"> Figure 6. CDR-H3 backbone and sequence diversification and interface scoring. </font> </em>
 </p>
  
 
+<p align="center">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/filters.png?raw=true" width="700"/>
+</p>
+<p align="center">
+<em> <font size="2"> Figure 7. Post-design developability filters. </font> </em>
+</p>
 
 In progress. 
 
