@@ -13,4 +13,4 @@ Hybrid precoding, a combination of digital and analog precoding, is an alternati
 <img align="center" width=600 height=400 src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/hp.png?raw=true">
 </p>
 
-Read the <a href="https://kevinbdsouza.files.wordpress.com/2021/07/hp.pdf"><u>Paper</u></a>.
+Read the <a href="https://ieeexplore.ieee.org/document/8490877"><u>Paper</u></a>.
