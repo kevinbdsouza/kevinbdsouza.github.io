@@ -70,16 +70,15 @@ Once a reasonable scoring function is designed, the next is to perform framework
 
 Once the best frameworks have been chosen, The CDRs can be diversified using methods that co-design the structure and sequence given the antibody-antigen pose, like MEAN [9], and DiffAb [12]. We can potentially focus the diversification on the most important CDR for binding which is CDR-H3 as shown in Fig. 6. The diversified CDR-H3 poses are then scored using the surrogate model that predicts the composite score. The common issue with desiginig such a scoring function is the scarcity of experimental antibody-antigen complexes. Synthetic data from simulation frameworks such as Absolut!? [38] may help, however, experimental validation of such frameworks is still lacking. 
 
-One solution for data scarcity, is a batched bayesian optimization (BO) or active learning (AL) framework that continualy refines the scoring function after batches of wet lab testing, before applying the final post-design filters. Implementing BO/AL along with the re-scoring potentials would require combining the sequence-specific binding affinity ($$K_D$$) values from wet lab experiments and features from antibody LMs with the landscape of pose-specific re-scoring potentials. The predicted composite score would be a normalized version of $$K_D$$ values. Note that the positive hits from the wet lab don't give us information about the epitope of binding, which can only be obtained through imaging. Therefore, there is a possibility that some of the resulting sequences from this approach bind the incorrect epitope.   
-
-
 <p align="center">
 <img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/cdr_h3.png?raw=true" width="700"/>
 </p>
 <p align="center">
 <em> <font size="2"> Figure 6. CDR-H3 backbone and sequence diversification and interface scoring. </font> </em>
 </p>
- 
+
+One solution for data scarcity, is a batched bayesian optimization (BO) or active learning (AL) framework that continualy refines the scoring function after batches of wet lab testing, before applying the final post-design filters. Implementing BO/AL along with the re-scoring potentials would require combining the sequence-specific binding affinity ($$K_D$$) values from wet lab experiments and features from antibody LMs with the landscape of pose-specific re-scoring potentials. The predicted composite score would be a normalized version of $$K_D$$ values. Note that the positive hits from the wet lab don't give us information about the epitope of binding, which can only be obtained through imaging. Therefore, there is a possibility that some of the resulting sequences from this approach bind the incorrect epitope.   
+
 The final step consists of dropping sequences that have poor developability and biophysical properties (Fig. 7). This includes using methods like AggScore [39] to check for aggregation prone regions, CamSol [40] to find insoluble patches, DeepSCM [41] to remove high viscosity candidates, BioPhi [42] to evaluate humanness, and TransMHCII [43]/NetMHCIIpan 4 [44] to check for immunogenicity. Therapeutic Antibody Profiler [45] is another important tool that uses surface hydrophobicity and charge near the CDR regions to check how similar the candidate antibody is to the therapeutically approved antibodies. It is possible that sequences that have a high predicted composite binding score might have to be discarded because of some of these filters. Rescue strategies may still help to retain some of those sequences like using Hu-mAb [46] or BioPhi [42] to humanize failed humanness candidates, or use a Multi-objective optimization strategy as described by Sormanni [47] with respect to the failed properties.  
 
 
