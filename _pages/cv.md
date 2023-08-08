@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
  
-I am a machine learning engineer using machine learning/deep learning to understand and design biomolecules and materials.
+I am a machine learning engineer using ML/DL to understand and design biomolecules and materials.
 
 Education
 ======
@@ -20,10 +20,9 @@ Education
 Work experience
 ======
 * ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
-  * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. The designed protein sequences achieved SOTA success rate when tested in the lab. Gandeeva will use this platform for their future protein affinity maturation campaigns
+  * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns
   * Tested interface scoring tools from CASP15 to drive in-house ppi prediction, which will significantly improve Gandeeva’s target discovery efforts
-  * Tested proof-of-concept target-potential binding partner interface recovery by using protein design to suggest favourable mutations on the potential binding partner. This will help Gandeeva recover weak but therapeutically relevant interfaces
-  * Provided critical feedback on the in-house active learning+molecular docking workflow for virtual screening
+  * Tested proof-of-concept target-potential binding partner interface recovery by using protein design to suggest favourable mutations. This will help Gandeeva recover weak but therapeutically relevant interfaces
   * **Manager**: Abhishek Mukhopadhyay
 
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
@@ -78,10 +77,10 @@ Service
   * Currently we are working alongside primary schools to educate teachers about autism. Partnering with various organisations working towards similar causes 
 * Mentor at Climate Hub, UBC
   * The UBC Climate Hub aims to connect university and community stakeholders to take bold climate action for a just and equitable future
-  * I worked with undergraduate students to find interdisciplinary approaches that contribute to climate awareness
+  * Worked with undergraduate students to find interdisciplinary approaches that contribute to climate awareness
 * Mentor at iGEM, UBC
   * The International Genetically Engineered Machines (iGEM) Competition aims to produce organisms with unusual properties to tackle modern problems using synthetic biology
-  * I worked with undergraduate students to design a transcription-based biosensor that detects levels of saxitoxin, a toxin responsible for paralytic shellfish poisoning in humans
+  * Worked with undergraduate students to design a transcription-based biosensor that detects levels of saxitoxin, a toxin responsible for paralytic shellfish poisoning in humans
 * Volunteer at Lets Talk Science and Geneskool, Genome BC
   * Mentored high school students to inculcate in them aptitude and curiosity towards science
   * Conducted workshops on the basics of genetics, traits and phenotypes for elementary grade students
