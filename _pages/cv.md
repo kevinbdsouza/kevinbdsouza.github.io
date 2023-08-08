@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
  
-I am a machine learning engineer using machine learning/deep learning to understand and design biomolecules.
+I am a machine learning engineer using machine learning/deep learning to understand and design biomolecules and materials.
 
 Education
 ======
@@ -27,13 +27,12 @@ Work experience
   * **Manager**: Abhishek Mukhopadhyay
 
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
-  * My thesis studied learning strategies that can design representations for the <a href="https://kevinbdsouza.github.io/publications/epilstm"><u>epigenome</u></a> and <a href="https://kevinbdsouza.github.io/publications/hiclstm"><u>chromatin structure</u></a>
-  * These representations are useful for a variety of tasks like pan-celltype element identification, novel element detection, transfer learning to unseen cell types, inference of 3D chromatin structure, and in-silico modifications
-  * The software for my research is written in Python using PyTorch and CUDA. The software packages resulting from this work are available on <a href="https://github.com/kevinbdsouza"><u>GitHub</u></a>
+  * Designed representation learning strategies for the <a href="https://kevinbdsouza.github.io/publications/epilstm"><u>epigenome</u></a> and <a href="https://kevinbdsouza.github.io/publications/hiclstm"><u>chromatin structure</u></a>
+  * Tested representations for tasks like pan-celltype element identification, novel element detection, transfer learning to unseen cell types, inference of 3D chromatin structure, and simulating in-silico alterations
   * **Supervisor**: Prof. Maxwell Libbrecht (<a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>) and Prof. Vijay Bhargava
 
 * ## Machine Learning Intern, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - Dec 2022)</span> 
-  * I designed antibodies using sequence and structure based Machine Learning, protein folding tools, and rosetta energy metrics
+  * Designed antibodies using sequence and structure based Machine Learning, antibody folding tools, rosetta energy metrics, and bayesian optimization
   * **Manager**: Abhishek Mukhopadhyay
 
 * ## Machine Learning Intern, <a href="https://www.skycope.com/"><u>Skycope Technologies</u></a> <span style="color:#2C4381"> (May 2018 - Sep 2018)</span>
@@ -45,28 +44,13 @@ Work experience
   * **Supervisor**: Hamidreza Boostanimehr
 
 * ## M.A.Sc. Research Assistant, The University of British Columbia <span style="color:#2C4381"> (Sep 2017 - Dec 2018)</span>
-  * Adopted deep learning frameworks for signal detection and developed hybrid precoding schemes for sequential data
-  * Used Python, PyTorch, and CUDA for deep learning
+  * Developed deep learning frameworks for signal detection and hybrid precoding schemes for sequential data
   * **Supervisor**: Prof. Vijay Bhargava
 
   
 Skills
 ======
-* Computational Biology
-* Machine Learning 
-  * Deep Learning, Transformers, Active Learning, Generative Modeling, Language Models, Sequential Models, Representation Learning, Statistics, Regression, Gradient Boosted Trees, MCMC
-* Coding 
-  * Python, C, C++, Linux, Git, MySQL
-* ML tools 
-  * PyTorch, GCP, CUDA, AWS, XGBoost, Docker
-* Biology 
-  * Protein Structure, Protein Design, Antibody Engineering, Molecular Dynamics, FEP, Docking, Chromatin Structure, Epigenomics, NGS, Genomics, Transcriptomics, Multiomics, RNA-seq, ChIP-seq, Hi-C, scRNA-seq
-* Softwares
-  * OpenMM, Pymol, Chimera, Gromacs, Rosetta, AlphaFold, Schrodinger
-* Data Science 
-* Bioinformatics
-* Software Development 
-
+* Machine Learning, Deep Learning, Transformers, Protein Design, Antibody Engineering, Molecular Dynamics, Computational Biology, NGS, Data Science, Software Development 
 
 
 Publications
