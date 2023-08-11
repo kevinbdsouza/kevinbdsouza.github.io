@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
  
-I am a machine learning engineer using ML/DL to understand and design biomolecules and materials.
+I am an entrepreneur using ML/DL to design materials for a sustainable future.
 
 Education
 ======
