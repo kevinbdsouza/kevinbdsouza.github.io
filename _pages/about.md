@@ -10,7 +10,7 @@ redirect_from:
 
 Hi, welcome to my site! Currently, I'm part of a team that is building AI methods to discover materials for a sustainable future (stay tuned). Get in touch if you want to chat about AI for climate change or sustainibility. 
 
-I spend most of my time thinking about and engaging in isues related to climate change, including (a) computational materials engineering for carbon capture, utilisation and storage (CCUS) and direct air capture (DAC), and b) <a href="https://www.ai4climatecoop.org/"><u>international collaboration on climate ploicy using AI</u></a>. 
+I spend most of my time thinking about and engaging in isues related to climate change, including (a) computational materials engineering for carbon capture, utilisation and storage (CCUS) and direct air capture (DAC), and b) transition to renewables and integration with the grid. 
 
 Previosuly, I was a machine learning engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I used machine learning to understand and design biomolecules. I was involved in multiple projects at Gandeeva including <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>designing antibodies</u></a> using sequence and structure based machine learning, and protein affinity maturation integrating molecular dynamics with deep learning based protein design. 
 
