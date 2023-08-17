@@ -49,7 +49,7 @@ Work experience
   
 Skills
 ======
-* Machine Learning, Deep Learning, Transformers, Protein Design, Antibody Engineering, Molecular Dynamics, Computational Biology, NGS, Data Science, Software Development 
+* Machine Learning, Deep Learning, Transformers, Molecular Dynamics, Density Functional Theory, Protein Design, Antibody Engineering, Computational Biology, NGS, Data Science, Software Development 
 
 
 Publications
