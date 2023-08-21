@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, welcome to my site! Currently, I'm part of a team that is building AI methods to discover materials for a sustainable future (stay tuned). Get in touch if you want to chat about AI for climate change and sustainability. 
+Hi, welcome to my site! Currently, I'm part of a team that is building AI methods to discover materials for a sustainable future. Get in touch if you want to chat about AI for climate change and sustainability. 
 
 I spend most of my time engaging in isues related to climate change and sustainability, including (a) computational materials engineering for carbon capture, utilisation and storage (CCUS), particulate matter (PM2.5) and water filtering, and b) transition to renewables and integration with the grid.  
 
