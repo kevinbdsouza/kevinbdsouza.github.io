@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
  
-I am an entrepreneur using ML/DL to design materials for a sustainable future.
+Designing methods and systems for a sustainable future.
 
 Education
 ======
