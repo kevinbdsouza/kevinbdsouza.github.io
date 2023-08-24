@@ -11,7 +11,7 @@ redirect_from:
 Hi, welcome to my site! Currently, I'm part of a team that is building AI methods to discover materials for a sustainable future. Get in touch if you want to chat about AI for climate change and sustainability. 
 
 Technologies that I see as most relevant to a green transition: 
-* Carbon capture, utilisation and storage (CCUS) (though not desirable, is inevitable)
+* Carbon capture, utilisation and storage (CCUS) 
 * Enhanced geothermal systems for clean firm power 
 * Grid enhancing technologies for stable transmission and better integration with renewables    
 
