@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
  
-Designing methods and systems for a sustainable future.
+Designing systems for a sustainable future.
 
 Education
 ======
@@ -49,7 +49,7 @@ Work experience
   
 Skills
 ======
-* Machine Learning, Deep Learning, Transformers, Molecular Dynamics, Density Functional Theory, Protein Design, Antibody Engineering, Computational Biology, NGS, Data Science, Software Development 
+* Machine Learning, Deep Learning, Climate Tech, Molecular Dynamics, Density Functional Theory, Computational Biology 
 
 
 Publications

@@ -8,12 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-Hi, welcome to my site! Currently, I'm part of a team that is building AI methods to discover materials for a sustainable future. Get in touch if you want to chat about AI for climate change and sustainability. 
+Hi, welcome to my site! Currently, I'm working in climate tech. Get in touch if you want to chat about AI, climate tech and sustainability. 
 
-Technologies that I see as most relevant to a green transition: 
-* Carbon capture, utilisation and storage (CCUS) 
+Technologies that I see as most relevant to a green transition:  
 * Enhanced geothermal systems for clean firm power 
-* Grid enhancing technologies for stable transmission and better integration with renewables    
+* Grid enhancing technologies for stable transmission and better integration with renewables
+* Carbon capture, utilization, and storage.     
 
 Previosuly, I was a machine learning engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I used machine learning to understand and design biomolecules. I was involved in multiple projects at Gandeeva including <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibody design</u></a>, protein affinity maturation, and target discovery. 
 
