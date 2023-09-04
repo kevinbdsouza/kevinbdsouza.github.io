@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Kevin Dsouza"
 title_separator          : "-"
-name                     : &name "Kevin Dsouza"
+name                     : &name "Kevin Bradley Dsouza"
 description              : &description "Machine Learning Engineer"
 url                      : https://kevinbdsouza.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
