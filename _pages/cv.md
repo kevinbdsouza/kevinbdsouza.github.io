@@ -19,20 +19,21 @@ Education
 
 Work experience
 ======
+* ## Co-Founder, Stealth Startup <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
+  * Designing materials for integrated carbon capture and conversion to useful products like
+Methanol and Concrete, powered by an AI platform
+
 * ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns
   * Tested interface scoring tools from CASP15 to drive in-house ppi prediction, which will significantly improve Gandeeva’s target discovery efforts
   * Tested proof-of-concept target-potential binding partner interface recovery by using protein design to suggest favourable mutations. This will help Gandeeva recover weak but therapeutically relevant interfaces
-  * **Manager**: Abhishek Mukhopadhyay
 
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
   * Designed representation learning strategies for the <a href="https://kevinbdsouza.github.io/publications/epilstm"><u>epigenome</u></a> and <a href="https://kevinbdsouza.github.io/publications/hiclstm"><u>chromatin structure</u></a>
   * Tested representations for tasks like pan-celltype element identification, novel element detection, transfer learning to unseen cell types, inference of 3D chromatin structure, and simulating in-silico alterations
-  * **Supervisor**: Prof. Maxwell Libbrecht (<a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>) and Prof. Vijay Bhargava
 
 * ## Machine Learning Intern, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - Dec 2022)</span> 
   * Designed antibodies using sequence and structure based Machine Learning, antibody folding tools, rosetta energy metrics, and bayesian optimization
-  * **Manager**: Abhishek Mukhopadhyay
 
 * ## Machine Learning Intern, <a href="https://www.skycope.com/"><u>Skycope Technologies</u></a> <span style="color:#2C4381"> (May 2018 - Sep 2018)</span>
   * Built Skycope's data and machine learning infrastructure 
@@ -40,11 +41,9 @@ Work experience
   * Modified Faster-RCNN, an existing object detection framework, to successfully <a href="https://kevinbdsouza.github.io/publications/frcnn"><u>detect and locate drone signals in the spectrogram</u></a>
   * Integrated ML software into Skycope's existing software stack 
   * Skycope is now using this as their flagship service in their automatic drone detection software
-  * **Supervisor**: Hamidreza Boostanimehr
 
 * ## M.A.Sc. Research Assistant, The University of British Columbia <span style="color:#2C4381"> (Sep 2017 - Dec 2018)</span>
   * Developed deep learning frameworks for signal detection and hybrid precoding schemes for sequential data
-  * **Supervisor**: Prof. Vijay Bhargava
 
   
 Skills
