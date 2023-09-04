@@ -19,7 +19,7 @@ Education
 
 Work experience
 ======
-* ## Co-Founder, Stealth Startup <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
+* ## Co-Founder, Stealth Startup <span style="color:#2C4381">(Jul 2023 - Present)</span> 
   * Designing materials for integrated carbon capture and conversion to useful products like
 Methanol and Concrete, powered by an AI platform
 
