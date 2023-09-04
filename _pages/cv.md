@@ -52,7 +52,7 @@ Skills
 * Machine Learning, Deep Learning, Climate Tech, Molecular Dynamics, Density Functional Theory, Computational Biology 
 
 
-Publications
+Publications and Patents 
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}

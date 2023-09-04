@@ -1,5 +1,5 @@
 ---
-title: "Talks on Epigenomic Representations"
+title: "Epigenomic Representations"
 collection: talks
 type: "Talks"
 permalink: /talks/epilstm
