@@ -1,7 +1,7 @@
 ---
 title: 'Developments in machine learning for antibody design'
 date: 2022-11-24
-permalink: /posts/2023/07/developments-in-ml-for-antibody-design
+permalink: /posts/2022/11/developments-in-ml-for-antibody-design
 tags:
   - antibody design 
   - artificial intelligence 
