@@ -19,9 +19,8 @@ Education
 
 Work experience
 ======
-* ## Co-Founder, Stealth Startup <span style="color:#2C4381">(Jul 2023 - Present)</span> 
-  * Designing materials for integrated carbon capture and conversion to useful products like
-Methanol and Concrete, powered by an AI platform.
+* ## Co-Founder, Stealth Startup <span style="color:#2C4381">(Jun 2023 - Present)</span> 
+  * Discovering materials for integrated carbon capture and conversion to useful products like Methanol and Concrete, powered by an AI platform.
 
 * ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns.
