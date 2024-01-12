@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, welcome to my site! Currently, I'm working in climate tech. Get in touch if you want to chat about AI, climate tech, sustainability, and policy.     
+Hi, welcome to my site! Currently, I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and climate. Get in touch if you want to chat about AI, climate tech, sustainability, and policy.     
 
 Previosuly, I was a machine learning engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I used machine learning to understand and design biomolecules. I was involved in multiple projects at Gandeeva including <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibody design</u></a>, protein affinity maturation, and target discovery. 
 
