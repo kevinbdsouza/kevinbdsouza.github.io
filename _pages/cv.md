@@ -47,7 +47,7 @@ Work experience
   
 Skills
 ======
-* Machine Learning, Deep Learning, Climate Tech, Molecular Dynamics, Density Functional Theory, Computational Biology 
+* Machine Learning, Deep Learning, Climate Tech, Computational Biology 
 
 
 Publications and Patents 
