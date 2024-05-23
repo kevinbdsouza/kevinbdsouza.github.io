@@ -1,5 +1,5 @@
 ---
-title: "Representation learnning for biology 1"
+title: "Representation learning for biology 1"
 collection: talks
 type: "Talks"
 permalink: /talks/epilstm

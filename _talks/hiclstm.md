@@ -1,5 +1,5 @@
 ---
-title: "Representation learnning for biology 2"
+title: "Representation learning for biology 2"
 collection: talks
 type: "Talks"
 permalink: /talks/hiclstm
