@@ -77,15 +77,10 @@ Service
 * Joint-Secretary at Autism Society of Udupi (ASU)
   * ASU is a non-profit organisation in Udupi, India, that aims to create awareness about Autism among parents, teachers, health professionals, students, general public and all the stakeholders so that early diagnosis and early intervention could give the child maximum benefits
   * Currently we are working alongside primary schools to educate teachers about autism. Partnering with various organisations working towards similar causes 
-* Mentor at Climate Hub, UBC
-  * The UBC Climate Hub aims to connect university and community stakeholders to take bold climate action for a just and equitable future
-  * Worked with undergraduate students to find interdisciplinary approaches that contribute to climate awareness
-* Mentor at iGEM, UBC
-  * The International Genetically Engineered Machines (iGEM) Competition aims to produce organisms with unusual properties to tackle modern problems using synthetic biology
-  * Worked with undergraduate students to design a transcription-based biosensor that detects levels of saxitoxin, a toxin responsible for paralytic shellfish poisoning in humans
-* Volunteer at Lets Talk Science and Geneskool, Genome BC
-  * Mentored high school students to inculcate in them aptitude and curiosity towards science
-  * Conducted workshops on the basics of genetics, traits and phenotypes for elementary grade students
+* Mentor at Climate Hub, iGEM, UBC and Lets Talk Science, Geneskool, Genome BC
+  * At UBC Climate Hub, I worked with undergraduate students to find interdisciplinary approaches that contribute to climate awareness
+  * As part of iGEM, I worked with undergraduate students to design a transcription-based biosensor that detects levels of saxitoxin, a toxin responsible for paralytic shellfish poisoning in humans
+  * At Lets Talk Science and Geneskool, I mentored high school students to inculcate in them aptitude and curiosity towards science and conducted workshops on the basics of genetics
 
 Projects
 ======

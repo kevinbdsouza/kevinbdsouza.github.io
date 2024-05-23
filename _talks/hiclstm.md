@@ -1,5 +1,5 @@
 ---
-title: "Chromatin Conformation Representations"
+title: "Representation learnning for biology 2"
 collection: talks
 type: "Talks"
 permalink: /talks/hiclstm
