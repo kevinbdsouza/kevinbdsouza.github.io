@@ -24,7 +24,7 @@ Education
 Work experience
 ======
 * ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Present)</span> 
-  * Developing and consulting on multiple projects including AI models for boreal afforestation in Canada, ML for incorporating technical change in critical mineral demand estimates, and ML tools for climate smart agricultural practices.  
+  * Developing and consulting on multiple projects including AI models for boreal afforestation in Canada and ML tools for spatial optimization of land use in Canada.  
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
   * Designed an AI framework for metal-organic framework (MOF) discovery for carbon capture and storage applications 
   * Explored mutational landscape of carbonic anhydrase using DL methods 
