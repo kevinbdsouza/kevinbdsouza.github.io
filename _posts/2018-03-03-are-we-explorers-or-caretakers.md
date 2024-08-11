@@ -8,6 +8,8 @@ tags:
   - space exploration
 ---
 
+*This was written when I was younger, and both the content and the form of my opinions on this topic have changed since then. Leaving this here for the sake of continuity.* 
+
 Interstellar is one of those movies that left me wondering about the possibilities of science fiction storytelling. Though the science behind the film is questionable and is visited in <a href="https://www.popsci.com/article/technology/surprising-science-behind-movie-interstellar/"><u>The science behind Interstellar</u></a>, from the breathtaking visuals to the pulsating background score, I’m sure it left us all wanting to be explorers of space.
 
 Though I’ve watched the movie countless times (read part time space obsession), there’s this one scene from the movie that got me asking a hard question. The scene shows a giant circular spaceship floating towards our next home to be as a result of a revelation about gravity from our future selves.
