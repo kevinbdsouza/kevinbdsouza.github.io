@@ -7,5 +7,3 @@ tags:
   - climate sensitivity
   - global warming  
 ---
-
-In progress. 
