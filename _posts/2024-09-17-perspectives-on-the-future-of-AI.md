@@ -1,7 +1,7 @@
 ---
 title: 'Perspectives on the future of AI'
 date: 2024-09-17
-permalink: /posts/2024/08/perspectives-on-the-future-of-AI
+permalink: /posts/2024/09/perspectives-on-the-future-of-AI
 tags:
   - artificial intelligence 
   - generalization 
