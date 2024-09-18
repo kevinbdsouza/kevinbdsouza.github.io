@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-Hi, welcome to my site. I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and climate. Interested in computation, AI for science, and climate adaptation.    
+Hi, welcome to my site. I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and climate. Interested in computation and AI for science.    
 
