@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
  
-Designing systems for a sustainable future.
+Interested in frontier AI and its applications to science.
 
-I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and climate. Previosuly, I was a machine learning engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I used machine learning to understand and design biomolecules. I was involved in multiple projects at Gandeeva including <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibody design</u></a>, protein affinity maturation, and target discovery. 
+I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and science. Previosuly, I was a machine learning engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I used machine learning to understand and design biomolecules. I was involved in multiple projects at Gandeeva including <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibody design</u></a>, protein affinity maturation, and target discovery. 
 
 For my Ph.D., I worked with the computational biology group at Simon Fraser University, while also being funded by UBC. At the <a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>, I designed representation learning strategies for <a href="https://kevinbdsouza.github.io/publications/hiclstm"><u>chromatin structure</u></a> and the <a href="https://kevinbdsouza.github.io/publications/epilstm"><u>epigenome</u></a>. Before my Ph.D., I completed my M.A.Sc while working with the information theory group at UBC. During this time, I interned with Skycope Technologies to build their <a href="https://kevinbdsouza.github.io/publications/frcnn"><u>automatic drone detection software</u></a>. I also have experience using machine learning in a variety of settings like <a href="https://kevinbdsouza.github.io/projects/privateml"><u>privacy preservation</u></a>, and <a href="https://kevinbdsouza.github.io/projects/vaelm"><u>variational language models</u></a>.
 
@@ -23,8 +23,12 @@ Education
 
 Work experience
 ======
+* ## NSERC Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2024 - Present)</span> 
+  * Consulting on multiple projects in AI for science. 
+* ## Researcher, Royal Bank of Canada <span style="color:#2C4381">(July 2024 - Present)</span> 
+  * Developing ML tools for spatial optimization of agricultural land use in Canada. 
 * ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Present)</span> 
-  * Developing and consulting on multiple projects including AI models for boreal afforestation in Canada and ML tools for spatial optimization of land use in Canada.  
+  * Developing AI models for decision making regarding boreal afforestation in Canada. 
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
   * Designed an AI framework for metal-organic framework (MOF) discovery for carbon capture and storage applications 
   * Explored mutational landscape of carbonic anhydrase using DL methods 
