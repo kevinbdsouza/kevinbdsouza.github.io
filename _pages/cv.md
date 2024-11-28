@@ -32,7 +32,6 @@ Work experience
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
   * Designed an AI framework for metal-organic framework (MOF) discovery for carbon capture and storage applications 
   * Explored mutational landscape of carbonic anhydrase using DL methods 
-  * Investigated SOTA ML models for remote sensing based methane detection   
 * ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns.
   * Tested interface scoring tools from CASP15 to drive in-house ppi prediction, which will significantly improve Gandeeva’s target discovery efforts.
