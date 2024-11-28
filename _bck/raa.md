@@ -15,8 +15,3 @@ Undergraduate project under Prof. Mohit P. Tahiliani in collaboration with Unive
 
 Read the <a href="https://kevinbdsouza.files.wordpress.com/2016/10/raa_tcp.pdf"><u>Report</u></a>.
 
-<!--{% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}-->
