@@ -67,11 +67,11 @@ Combining inference-time decoding strategies with model steering could be an int
 
 This integrated approach involves:
 
-- **Layer-Wise Analysis**: Examining the contributions of different layers within the model to identify where factual inaccuracies may originate (using probing or SAEs). Understanding the unique characteristics of each layer's hidden representations, both in MLP and self-attention blocks, can inform where and how to apply interventions effectively (steering). If certain layers and blocks are identified as being more important than others, these can be selectively intervened, and also be up-weighted during the decoding process.  
+- **Layer-Wise Analysis**: Examining the contributions of different layers within the model to identify where factual inaccuracies may originate (using probing or SAEs). Understanding the unique characteristics of each layer's hidden representations, both in MLP and self-attention blocks, can inform where and how to apply interventions effectively (steering). If certain layers and blocks are identified as being more important than others for factuality, these can be selectively intervened, and also be up-weighted during the decoding process.  
 
 - **Score Integration**: Utilizing various entropy and agreement scores from methods like Entropix, EigenScore, and DoLa to inform decoding parameters. These scores can be tabulated at various layers and blocks, and help determine the optimal sampling thresholds. Different scores can be combined using an algorithm that weights these scores appropriately. 
 
-- **Adaptive Interventions**: Developing algorithms that can automatically determine when to apply specific interventions based on the content being generated and the model's confidence levels. This adaptability is crucial for handling the diverse range of inputs and contexts that LLMs encounter in real-world applications.
+- **Adaptive Interventions**: Developing algorithms that can automatically determine when to apply either intervention or combine them based on the content being generated and the model's internals. This adaptability is crucial for handling the diverse range of inputs and contexts that LLMs encounter in real-world applications.
 
 **Applications in Critical Domains and Education**
 
