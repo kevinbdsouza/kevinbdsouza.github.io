@@ -7,8 +7,6 @@ tags:
   - adaptation 
 ---
 
-### **Abstract**
-
 Climate change has emerged as one of the most pressing challenges of the 21st century, posing unprecedented risks to economies, ecosystems, and human well-being. India, with its diverse geography and significant dependence on climate-sensitive sectors like agriculture, faces heightened vulnerability. Rising temperatures, extreme heat events, changing precipitation patterns, droughts, floods, and coastal hazards are increasingly evident, threatening rural livelihoods and urban infrastructure alike. Although India has been proactive in formulating climate policies—such as the National Action Plan on Climate Change (NAPCC) and State Action Plans on Climate Change (SAPCCs)—and has undertaken mitigation initiatives, the intensifying impacts demand a sharper focus on adaptation. This article reviews India’s key climate risks, summarizes existing adaptation strategies, and discusses the urgent need for scaling up investments in resilience-building measures. It concludes by proposing a strategic path forward to mainstream and finance climate adaptation across sectors.
 
 ### **1. Introduction**
