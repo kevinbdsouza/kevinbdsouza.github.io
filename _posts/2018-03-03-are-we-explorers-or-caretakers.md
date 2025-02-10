@@ -1,11 +1,10 @@
 ---
-title: 'Are we explorers or caretakers?'
+title: 'Are We Explorers or Caretakers?'
 date: 2018-03-03
 permalink: /posts/2018/03/are-we-explorers-or-caretakers
 tags:
   - environment
   - climate change
-  - space exploration
 ---
 
 *This was written when I was younger, and both the content and the form of my opinions on this topic have changed since then. Leaving this here for the sake of continuity.* 

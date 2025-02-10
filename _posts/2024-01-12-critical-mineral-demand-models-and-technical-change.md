@@ -1,5 +1,5 @@
 ---
-title: 'The need for a critical mineral demand model incorporating technical change'
+title: 'The Need for a Critical Mineral Demand Model Incorporating Technical Change'
 date: 2024-01-12
 permalink: /posts/2024/08/critical-mineral-demand-models-and-technical-change
 tags:

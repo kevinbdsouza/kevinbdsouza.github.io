@@ -1,5 +1,5 @@
 ---
-title: 'Perspectives on the future of AI'
+title: 'Perspectives on the Future of AI'
 date: 2024-09-17
 permalink: /posts/2024/09/perspectives-on-the-future-of-AI
 tags:
