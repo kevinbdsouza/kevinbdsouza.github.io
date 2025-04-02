@@ -26,8 +26,9 @@ Work experience
 * ## NSERC Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2024 - Present)</span> 
   * Consulting on multiple projects in AI for science. 
 * ## Researcher, Royal Bank of Canada <span style="color:#2C4381">(July 2024 - Present)</span> 
-  * Developing ML tools for spatial optimization of agricultural land use in Canada. 
-* ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Present)</span> 
+  * LLM's + evolutionary strategies for spatial optimization using heuristics. 
+  * Reinforcement learning from verifiable rewards (RLVR) for learning local natural language heuristics to mimic global graph optimization problems.  
+* ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Present)</span>
   * Developing AI models for decision making regarding boreal afforestation in Canada. 
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
   * Designed an AI framework for metal-organic framework (MOF) discovery for carbon capture and storage applications 
