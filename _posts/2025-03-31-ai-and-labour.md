@@ -18,9 +18,9 @@ On the other hand, Acemoglu's empirical, task-based model forecasts modest produ
 
 Epoch AI’s GATE model provides an integrated, compute-based assessment of AI-driven economic transformation. GATE uniquely combines a compute-based AI development model, automation mapping, and macroeconomic modeling with endogenous investment and adjustment costs. This integration highlights critical interactions between AI advancements, economic growth, and labor dynamics, capturing real-world frictions such as hardware production bottlenecks, capital adjustment costs, and uncertainties around AI capabilities. However, while comprehensive, the model still simplifies the complexities of task heterogeneity and the dynamic nature of labor markets, particularly in reallocation challenges and social adaptability to rapid technological changes.
 
-None of these papers thoroughly addresses the differentiated impacts of automation across varying skill levels, nor the social and economic implications of widespread re-skilling or unemployment. Moreover, institutional contexts such as labor laws, union power, cultural attitudes toward automation, and public policies aimed at mitigating adverse effects remain significantly understudied.
+None of these papers thoroughly addresses the differentiated impacts of automation across varying skill levels, nor the social and economic implications of widespread re-skilling or unemployment. Moreover, institutional contexts such as labor laws, union power, cultural attitudes toward automation, and public policies aimed at mitigating adverse effects remain significantly understudied. The extent to which these studies differ in their predictions with respect to each other is concerning. It points to the fact that no one has a clear or common understanding of what this technology's impact on the labour market will be, and significantly more effort needs to be put into developing more detailed scenarios, assuming alternate models, comparing results, running ablations, and condensing insights.      
 
-Addressing these gaps requires a concerted research effort, focusing on several key areas:
+Addressing these gaps requires a concerted research effort. Some potential areas to focus on are:
 
 1. **Granular Skill Heterogeneity and Adaptation**: Future research should precisely map AI impacts across diverse skill sets, identifying tasks and roles most susceptible to displacement or complementarity. Examining the effectiveness, cost, and feasibility of re-skilling programs is crucial to prepare the workforce adequately.
 
@@ -30,7 +30,7 @@ Addressing these gaps requires a concerted research effort, focusing on several 
 
 4. **Economic and Welfare Valuation of New Tasks**: Developing methods to quantify the societal and economic impacts of new AI-enabled tasks, including those that negatively affect social welfare, is essential. Such valuation frameworks should inform policy decisions and mitigate potential adverse consequences.
 
-Researchers must balance empirical detail and theoretical depth, connecting short-term realistic scenarios with long-term, potentially radical transformations. By rigorously studying these understudied aspects of the AI-labor relationship, we can better anticipate and manage the profound implications of AI for society and employment.
+We must balance empirical detail and theoretical depth, connecting short-term realistic scenarios with long-term, potentially radical transformations. By rigorously studying these understudied aspects of the AI-labor relationship, we can better anticipate and manage the profound implications of AI for society and employment.
 
       
 
