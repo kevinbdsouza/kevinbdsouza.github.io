@@ -25,7 +25,7 @@ Work experience
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
   * Designed representation learning strategies for <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>chromatin structure</u></a> and the <a href="https://ieeexplore.ieee.org/document/9442933"><u>epigenome</u></a>.
 * ## Machine Learning Intern, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - Dec 2022)</span> 
-  * Designed antibodies using sequence and structure based Machine Learning, antibody folding tools, rosetta energy metrics, and bayesian optimization.
+  * Designed antibodies using sequence and structure based Machine Learning, energy metrics, and bayesian optimization.
 * ## Machine Learning Intern, <a href="https://www.skycope.com/"><u>Skycope Technologies</u></a> <span style="color:#2C4381"> (May 2018 - Sep 2018)</span>
   * Built Skycope's data and machine learning infrastructure. Integrated  <a href="https://ieeexplore.ieee.org/abstract/document/9075413"><u>ML</u></a> into Skycope's existing software stack, which is now it's flagship drone detection software.
 
