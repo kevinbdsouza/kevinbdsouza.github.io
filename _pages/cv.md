@@ -9,47 +9,32 @@ redirect_from:
 
 {% include base_path %}
  
-I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and science. Previosuly, I worked in AI for Biology. I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. For my Ph.D., I designed (<a href="https://www.nature.com/articles/s41467-022-31337-w"><u>representations for Biology</u></a>, working jointly with University of British Columbia and Simon Fraser University (<a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>).  
-
-Education
-======
-* Ph.D. in Electrical and Computer Engineering (<span style="color:#2C4381">Thesis: Representation Learning Strategies for the Epigenome and Chromatin Structure using Recurrent Neural Models)</span>, The University of British Columbia, Vancouver, 2023 
-* M.A.Sc. in Electrical and Computer Engineering, The University of British Columbia, Vancouver, 2018
-* B.Tech. in Electronics and Communication Enginnering, National Institute of Technology Karnataka, India, 2017 
+I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and science. Previosuly, I worked in AI for Biology. I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. For my Ph.D., I designed <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>representations for Biology</u></a>, working with <a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>.  
 
 Work experience
 ======
-* ## NSERC Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2024 - Present)</span> 
+* ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Present)</span> 
   * Consulting on multiple projects in AI for science. 
+  * NSERC fellow starting October '24
 * ## Researcher, Royal Bank of Canada <span style="color:#2C4381">(July 2024 - Present)</span> 
-  * LLM's + evolutionary strategies for spatial optimization using heuristics. 
-  * Reinforcement learning from verifiable rewards (RLVR) for learning local natural language heuristics to mimic global graph optimization problems.  
-* ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Present)</span>
-  * Developing AI models for decision making regarding boreal afforestation in Canada. 
+  * Working on LLM's + evolutionary strategies and Reinforcement learning from verifiable rewards (RLVR) for spatial optimization using heuristics. 
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
-  * Designed an AI framework for metal-organic framework (MOF) discovery for carbon capture and storage applications 
-  * Explored mutational landscape of carbonic anhydrase using DL methods 
+  * Worked alongside the team to develop an AI framework for metal-organic framework (MOF) discovery for carbon capture and storage applications 
 * ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns.
-  * Tested interface scoring tools from CASP15 to drive in-house ppi prediction, which will significantly improve Gandeeva’s target discovery efforts.
-  * Tested proof-of-concept target-potential binding partner interface recovery by using protein design to suggest favourable mutations. This will help Gandeeva recover weak but therapeutically relevant interfaces.
-
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
-  * Designed representation learning strategies for the <a href="https://kevinbdsouza.github.io/publications/epilstm"><u>epigenome</u></a> and <a href="https://kevinbdsouza.github.io/publications/hiclstm"><u>chromatin structure</u></a>.
-  * Tested representations for tasks like pan-celltype element identification, novel element detection, transfer learning to unseen cell types, inference of 3D chromatin structure, and simulating in-silico alterations.
-
+  * Designed representation learning strategies for <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>chromatin structure</u></a> and the <a href="https://ieeexplore.ieee.org/document/9442933"><u>epigenome</u></a>.
 * ## Machine Learning Intern, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - Dec 2022)</span> 
   * Designed antibodies using sequence and structure based Machine Learning, antibody folding tools, rosetta energy metrics, and bayesian optimization.
-
 * ## Machine Learning Intern, <a href="https://www.skycope.com/"><u>Skycope Technologies</u></a> <span style="color:#2C4381"> (May 2018 - Sep 2018)</span>
-  * Built Skycope's data and machine learning infrastructure.
-  * Modified Faster-RCNN, an existing object detection framework, to successfully <a href="https://kevinbdsouza.github.io/publications/frcnn"><u>detect and locate drone signals in the spectrogram</u></a>.
-  * Integrated ML into Skycope's existing software stack, which is now it's flagship drone detection software.
+  * Built Skycope's data and machine learning infrastructure. Integrated  <a href="https://ieeexplore.ieee.org/abstract/document/9075413"><u>ML</u></a> into Skycope's existing software stack, which is now it's flagship drone detection software.
 
-* ## M.A.Sc. Research Assistant, The University of British Columbia <span style="color:#2C4381"> (Sep 2017 - Dec 2018)</span>
-  * Developed deep learning frameworks for signal detection and hybrid precoding schemes for sequential data.
+Education
+======
+* Ph.D. in Electrical and Computer Engineering (<span style="color:#2C4381">Thesis: <a href="https://kevinbdsouza.github.io/projects/phd_thesis"><u>Representation Learning Strategies for the Epigenome and Chromatin Structure using Recurrent Neural Models</u></a>)</span>, The University of British Columbia, Vancouver, 2023 
+* M.A.Sc. in Electrical and Computer Engineering, The University of British Columbia, Vancouver, 2018
+* B.Tech. in Electronics and Communication Enginnering, National Institute of Technology Karnataka, India, 2017 
 
-  
 Skills
 ======
 * Machine Learning, Artifical Intelligence, Climate Change, Computational Biology 
