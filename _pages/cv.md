@@ -60,7 +60,7 @@ Teaching
   
 Service 
 ======
-* Joint-Secretary at Autism Society of Udupi (ASU), a non-profit organisation in Udupi, India, that aims to create awareness about Autism among parents, teachers, health professionals, students, general public and all the stakeholders so that early diagnosis and early intervention could give the child maximum benefits
+* Joint-Secretary at Autism Society of Udupi (ASU), a non-profit organisation in Udupi, India, that aims to create awareness about Autism among parents, teachers, health professionals, students, general public, and all the stakeholders, so that early diagnosis and early intervention could give the child maximum benefits
 
 * Past mentor at Climate Hub, iGEM, UBC, Lets Talk Science, and Geneskool, Genome BC
 
