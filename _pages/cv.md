@@ -9,11 +9,7 @@ redirect_from:
 
 {% include base_path %}
  
-Interested in AI, its applications to science, and its relationship with society.
-
-I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and science. Previosuly, I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. 
-
-For my Ph.D., I worked with the computational biology group at Simon Fraser University, while also being funded by UBC. At the <a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>, I designed representation learning strategies for <a href="https://kevinbdsouza.github.io/publications/hiclstm"><u>chromatin structure</u></a> and the <a href="https://kevinbdsouza.github.io/publications/epilstm"><u>epigenome</u></a>. Before my Ph.D., I completed my M.A.Sc while working with the information theory group at UBC. During this time, I interned with Skycope Technologies to build their <a href="https://kevinbdsouza.github.io/publications/frcnn"><u>automatic drone detection software</u></a>. I also have experience using machine learning in a variety of settings like <a href="https://kevinbdsouza.github.io/projects/privateml"><u>privacy preservation</u></a>, and <a href="https://kevinbdsouza.github.io/projects/vaelm"><u>variational language models</u></a>.
+I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and science. Previosuly, I worked in AI for Biology. I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. For my Ph.D., I designed (<a href="https://www.nature.com/articles/s41467-022-31337-w"><u>representations for Biology</u></a>, working jointly with University of British Columbia and Simon Fraser University (<a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>).  
 
 Education
 ======
