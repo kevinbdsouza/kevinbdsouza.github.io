@@ -223,13 +223,11 @@ Input data
 <em> <font size="2"> Fig. 3: Completion length across steps.</font> </em>
 </p>
 
-</div>
-
 The run begins in the gutter (≈ 0.4), tanks further as the policy struggles with formatting, then climbs steadily once the `<think>` / `<answer>` template locks in. It tops out around **3.2** by 14 k steps (Fig. 2: Epoch 1). Starting from the previous checkpoint, the initial reward is already ≈ 3.4. A short “digestion dip” follows (the policy adapts to the new learning-rate schedule) before reward recovers and plateaus just under **3.6** (Fig. 2: Epoch 2). The curve is almost flat; reward hovers around **4.1 ± 0.1** with only stochastic noise. At this point all three reward components are saturated (Fig. 2: Epoch 4). Early in Epoch 1 completions average **≈ 1 000 tokens**, peaking at a verbose **1 300–1 500** when the policy “hallucinates” long-winded justifications (Fig. 3). As rewards improve, the average shrinks to **≈ 500 tokens**. By Epoch 4 the model stabilises at **≈ 300–350 tokens** per sample—just enough for a concise `<think>` plus a single-word `<answer>` (Fig. 3). Shorter completions correlate with higher reward because (i) the repetition penalty bites less, and (ii) long chains of reasoning are rarely needed for a quadrant decision once the local-neighbour rule is known.
 
 Mapping answers back to class-labels gives a **\~ 65 %** classification accuracy on a held out test set. Together, this suggests that training proceeds not by bloating text but by tightening it: as heuristics become crisper, the policy earns more reward with fewer tokens, yet still lacks enough context to resolve the trickiest edge cases. 
 
-#### Recurring strategies & heuristics in the completions 
+## Recurring strategies & heuristics in the completions 
 
 | # | Strategy / Heuristic                                                                                                                                                                    | What it looks like in the *<think>* monologue                                                               | Frequency\* |
 | - | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
