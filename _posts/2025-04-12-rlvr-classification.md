@@ -13,10 +13,10 @@ When I asked whether a compact 1.5-B parameter model could double as a local lan
 1. Expressive power – do today’s distilled language models understand enough geography and have enough spatial awareness to be decision makers? 
 2. RLVR – can reinforcement learning from verifiable rewards (RLVR) scale beyond toy domains?
 
-#### From global optimum to conversational apprentice
+## From global optimum to conversational apprentice
 I start with a mixed-integer optimisation model, the Global Land Manager (GLM), that finds the yield-connectivity optimum for an entire Canadian landscape. This solution acts as an oracle:
 
-```text
+```
 Quadrant (x, y) → {habitat, crop}
 ```
 
@@ -85,7 +85,7 @@ export LAUNCHER="HF_HUB_ENABLE_HF_TRANSFER=0 ACCELERATE_LOG_LEVEL=info TRANSFORM
 srun $SRUN_ARGS --jobid $SLURM_JOB_ID bash -c "$LAUNCHER --role \$SLURMD_NODENAME: $CMD" 2>&1
 ```
 
-Inside **`grpo.py`** I specify custom rewards:
+Inside **`grpo.py`**, I specify custom rewards:
 
 ```python
 REWARD_FUNCS_REGISTRY = {
@@ -180,7 +180,7 @@ temperature: 0.7
 warmup_ratio: 0.1
 ```
 
-I use the following prompt template:
+and the following prompt template:
 ```
 <|begin▁of▁sentence|>You are a helpful assistant …
 System pre-amble
@@ -207,17 +207,25 @@ Input data
 <|Assistant|>
 ```
 
-#### Rewards and completion lengths
+## Rewards and completion lengths
 
-<div align="center">
+<p align="center">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/reward_epochs.png?raw=true" width="400"/>
+</p>
+<p align="center">
+<em> <font size="2"> Fig. 2: Train reward (moving-average) across steps.</font> </em>
+</p>
 
-|    <img src="/files/reward_epochs.png" width="460"/>    | <img src="/files/comp_len.png" width="460"/> |
-| :-----------------------------------------------------: | :------------------------------------------: |
-| **Fig. 2a – Train reward (moving-average) across steps** |  **Fig. 2b – Completion length across steps** |
+<p align="center">
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/comp_len.png?raw=true" width="400"/>
+</p>
+<p align="center">
+<em> <font size="2"> Fig. 3: Completion length across steps.</font> </em>
+</p>
 
 </div>
 
-The run begins in the gutter (≈ 0.4), tanks further as the policy struggles with formatting, then climbs steadily once the `<think>` / `<answer>` template locks in. It tops out around **3.2** by 14 k steps (Fig. 2a: Epoch 1). Starting from the previous checkpoint, the initial reward is already ≈ 3.4. A short “digestion dip” follows (the policy adapts to the new learning-rate schedule) before reward recovers and plateaus just under **3.6** (Fig. 2a: Epoch 2). The curve is almost flat; reward hovers around **4.1 ± 0.1** with only stochastic noise. At this point all three reward components are saturated (Fig. 2a: Epoch 4). Early in Epoch 1 completions average **≈ 1 000 tokens**, peaking at a verbose **1 300–1 500** when the policy “hallucinates” long-winded justifications (Fig. 2b). As rewards improve, the average shrinks to **≈ 500 tokens**. By Epoch 4 the model stabilises at **≈ 300–350 tokens** per sample—just enough for a concise `<think>` plus a single-word `<answer>` (Fig. 2b). Shorter completions correlate with higher reward because (i) the repetition penalty bites less, and (ii) long chains of reasoning are rarely needed for a quadrant decision once the local-neighbour rule is known.
+The run begins in the gutter (≈ 0.4), tanks further as the policy struggles with formatting, then climbs steadily once the `<think>` / `<answer>` template locks in. It tops out around **3.2** by 14 k steps (Fig. 2: Epoch 1). Starting from the previous checkpoint, the initial reward is already ≈ 3.4. A short “digestion dip” follows (the policy adapts to the new learning-rate schedule) before reward recovers and plateaus just under **3.6** (Fig. 2: Epoch 2). The curve is almost flat; reward hovers around **4.1 ± 0.1** with only stochastic noise. At this point all three reward components are saturated (Fig. 2: Epoch 4). Early in Epoch 1 completions average **≈ 1 000 tokens**, peaking at a verbose **1 300–1 500** when the policy “hallucinates” long-winded justifications (Fig. 3). As rewards improve, the average shrinks to **≈ 500 tokens**. By Epoch 4 the model stabilises at **≈ 300–350 tokens** per sample—just enough for a concise `<think>` plus a single-word `<answer>` (Fig. 3). Shorter completions correlate with higher reward because (i) the repetition penalty bites less, and (ii) long chains of reasoning are rarely needed for a quadrant decision once the local-neighbour rule is known.
 
 Mapping answers back to class-labels gives a **\~ 65 %** classification accuracy on a held out test set. Together, this suggests that training proceeds not by bloating text but by tightening it: as heuristics become crisper, the policy earns more reward with fewer tokens, yet still lacks enough context to resolve the trickiest edge cases. 
 
@@ -236,7 +244,7 @@ Mapping answers back to class-labels gives a **\~ 65 %** classification accuracy
 \*Percentages are approximate share of completions in which the motif appears (multiple motifs often co-occur).
 
 
-#### Typical reasoning flow inside `<think> … </think>`
+## Typical reasoning flow inside `<think> … </think>`
 
 1. **Data parsing** – restate or tabulate central vs. neighbour yields and connectivity.
 2. **Prune impossible options** – drop crops with zero yield.
@@ -248,7 +256,7 @@ Mapping answers back to class-labels gives a **\~ 65 %** classification accuracy
 
 The model almost always honours the required tag structure, uses a concise single-word answer, and avoids leaking the chain-of-thought outside the `<think>` block.
 
-#### Discussion
+## Discussion
 
 How does this compare with decision trees for interpretable rules? Decision trees are simpler, cheaper, and structurally transparent, but they can neither converse with planners nor ingest messy qualitative context the way an LLM can. In practice the language model’s `<think>` block gives domain-specific planners a narrative explanation they can accept, critique, or refine—capabilities that a static rule list cannot match. Heuristics remain simple (one- or two-factor scoring, local neighbourhood reasoning); yet the variety of tie-breakers (habitat corridor logic, global baseline reminder) introduces diversity that RLVR can exploit.
 
