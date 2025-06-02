@@ -229,7 +229,7 @@ Mapping answers back to class-labels gives a **\~ 65 %** classification accuracy
 
 ## Recurring strategies & heuristics in the completions 
 
-| # | Strategy / Heuristic                                                                                                                                                                    | What it looks like in the *<think>* monologue                                                               | Frequency\* |
+| # | Strategy / Heuristic                                                                                                                                                                    | What it looks like in the <think> monologue                                                               | Frequency\* |
 | - | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
 | 1 | **Yield-max first pass** – rank candidate crops by the *central* polygon’s t ha⁻¹ yield and keep only the top-1 or top-2.                                                               | “Wheat gives 0.74 t ha⁻¹, oat 0.56; corn/soy are zero ⇒ ignore them.”                                       | \~85 %      |
 | 2 | **Connectivity tie-breaker** – when two crops have comparable yield, choose the one whose adoption keeps local/ecoregion connectivity ≥ current level.                                  | “Both wheat and oat similar here, but oat neighbours already give 0.72 connectivity corridor – choose oat.” | \~60 %      |
