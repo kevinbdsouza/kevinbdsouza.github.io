@@ -1,3 +1,9 @@
+<style>
+/* affects only this file */
+code             { font-size: 0.95rem;}
+pre, pre code    { font-size: 1.05rem;}
+</style>
+
 ---
 title: 'Teaching a 1.5-Billion-Parameter LLM to Classify Land-Use Decisions with RLVR and Spatial Heuristics'
 date: 2025-04-12
@@ -29,7 +35,7 @@ Because every label is verifiable, we can define a crisp reward:
 I use **DeepSeek-R1-Distill-Qwen-1.5B** with **Group Relative Policy Optimisation (GRPO)**, which clips the KL-divergence to a reference model. Whenever I zero-out the KL anchor (`β = 0`), reward spikes and then falls as the policy latches onto easy-to-game formats and degenerates into repetition (Fig. 1).
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/no_kl.png?raw=true" width="500"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/no_kl.png?raw=true" width="600"/>
 </p>
 <p align="center">
 <em> <font size="2"> Fig. 1: Train rewards without KL term.</font> </em>
@@ -85,9 +91,7 @@ srun $SRUN_ARGS --jobid $SLURM_JOB_ID bash -c "$LAUNCHER --role \$SLURMD_NODENAM
 
 Inside **`grpo.py`**, I specify custom rewards:
 
-<div style="font-size: 14px; line-height: 1.4;">
-
-  ```python
+```python
   REWARD_FUNCS_REGISTRY = {
         "repetition_penalty": get_repetition_penalty_reward(
             ngram_size=script_args.repetition_n_grams,
@@ -97,8 +101,7 @@ Inside **`grpo.py`**, I specify custom rewards:
         "format_reward": format_reward
     }
   reward_funcs = [REWARD_FUNCS_REGISTRY[func] for func in script_args.reward_funcs]
-  ```
-</div> 
+```
 
 and the heavy lifting (advantage estimation, adaptive KL, LR decay) is done by `GRPOTrainer`.
 
@@ -211,14 +214,14 @@ Input data
 ## Rewards and completion lengths
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/reward_epochs.png?raw=true" width="500"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/reward_epochs.png?raw=true" width="600"/>
 </p>
 <p align="center">
 <em> <font size="2"> Fig. 2: Train reward (moving-average) across steps.</font> </em>
 </p>
 
 <p align="center">
-<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/comp_len.png?raw=true" width="500"/>
+<img align="center" src="https://github.com/kevinbdsouza/kevinbdsouza.github.io/blob/master/files/comp_len.png?raw=true" width="600"/>
 </p>
 <p align="center">
 <em> <font size="2"> Fig. 3: Completion length across steps.</font> </em>
