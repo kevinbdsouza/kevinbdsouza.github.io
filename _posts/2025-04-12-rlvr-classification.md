@@ -1,9 +1,3 @@
-<style>
-/* affects only this file */
-code             { font-size: 0.95rem;}
-pre, pre code    { font-size: 1.05rem;}
-</style>
-
 ---
 title: 'Teaching a 1.5-Billion-Parameter LLM to Classify Land-Use Decisions with RLVR and Spatial Heuristics'
 date: 2025-04-12
@@ -14,6 +8,12 @@ tags:
   - large language models
   - heuristics 
 ---
+
+<style>
+/* affects only this file */
+code             { font-size: 12px;}
+pre, pre code    { font-size: 12px;}
+</style>
 
 When I asked whether a compact 1.5-B parameter model could double as a local land-use classifier, I was really probing two things at once:
 1. Expressive power – do today’s distilled language models understand enough geography and have enough spatial awareness to be decision makers? 
