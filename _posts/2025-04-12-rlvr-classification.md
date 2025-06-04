@@ -1,5 +1,5 @@
 ---
-title: 'Teaching a 1.5-Billion-Parameter LLM to Classify Land-Use Decisions with RLVR and Spatial Heuristics'
+title: 'Teaching a 1.5-Billion-Parameter LLM to Classify with RLVR and Spatial Heuristics'
 date: 2025-04-12
 permalink: /posts/2025/04/rlvr-classification
 tags:
@@ -9,15 +9,15 @@ tags:
   - heuristics 
 ---
 
+When I asked whether a compact 1.5-B parameter model could double as a local land-use classifier, I was really probing two things at once:
+1. Expressive power: do today’s distilled language models understand enough geography and have enough spatial awareness to be decision makers? 
+2. RLVR: can reinforcement learning from verifiable rewards (RLVR) scale beyond toy domains?
+
 <style>
 /* affects only this file */
 code             { font-size: 12px;}
 pre, pre code    { font-size: 12px;}
 </style>
-
-When I asked whether a compact 1.5-B parameter model could double as a local land-use classifier, I was really probing two things at once:
-1. Expressive power – do today’s distilled language models understand enough geography and have enough spatial awareness to be decision makers? 
-2. RLVR – can reinforcement learning from verifiable rewards (RLVR) scale beyond toy domains?
 
 ## From global optimum to conversational apprentice
 I start with a mixed-integer optimisation model, the Global Land Manager (GLM), that finds the yield-connectivity optimum for an entire Canadian landscape. This solution acts as an oracle:
