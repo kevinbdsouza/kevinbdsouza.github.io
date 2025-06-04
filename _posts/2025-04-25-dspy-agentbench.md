@@ -15,8 +15,6 @@ pre, pre code    { font-size: 12px;}
 </style>
 
 
-## Evaluating DSPy-Based Prompt Optimisation on AgentBench
-
 AgentBench’s **dbbench-std** task evaluates an agent’s ability to answer SQL questions in a multi-hop tool use setting. The controller exposes interaction endpoints, so that every task instance can be completed with a small, repeatable tool repertoire:
 
 | Tool       | Purpose                                                                   | Typical arguments                                          |
