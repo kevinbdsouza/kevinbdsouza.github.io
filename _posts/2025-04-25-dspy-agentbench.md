@@ -60,7 +60,7 @@ python -m src.start_task -a
 
 ## Baseline **Chain-of-Thought** agent in DSPy
 
-The baseline agent is a CoT implementation in DSPy. Below is a lightly annotated view of the baseline agent’s control flow. Everything outside the grey block is ordinary Python; the grey block is where DSPy injects the LM.
+The baseline agent is a CoT implementation in DSPy. Below is a lightly annotated view of the baseline agent’s control flow. 
 
 ```python
 class Agent(dspy.Module):
@@ -104,12 +104,12 @@ class Agent(dspy.Module):
 | Aspect                            | What happens                                                                                                                                                                                                                                             |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Signature**                     | The CoT signature has two *inputs*—`question` and `trajectory` (the full history)—and two *outputs*: `next_selected_fn` (a string literal that must match one of `["init", "db_query", "finish"]`) and an `args` dict.                                   |
-| **ChainOfThought** (your snippet) | Prepends an extra field called `reasoning` to the signature. During generation the LM fills `reasoning` first (“Let’s think step by step …”), then fills `next_selected_fn`, and finally the JSON-like `args`.                                           |
+| **ChainOfThought**  | Prepends an extra field called `reasoning` to the signature. During generation the LM fills `reasoning` first (“Let’s think step by step …”), then fills `next_selected_fn`, and finally the JSON-like `args`.                                           |
 | **Trajectory growth**             | After each tool call we append a dict containing: *LM reasoning*, *selected\_fn*, *args actually used*, and the *server’s return payload/errors*. This trajectory is re-fed into the next LM call, giving it visibility over past successes or failures. |
 | **Termination**                   | The loop exits either when the LM chooses `finish` itself or when `max_steps` is hit (in which case a forced `finish` with a dummy answer is issued so AgentBench can close the session gracefully).                                                     |
 
 
-I use `gemini/gemini-2.0-flash` as my language model with `temperature = 0.7` and `max\_tokens = 2048)`. The baseline CoT agent with this LM achieved **\~ 68 %** success rate in finding the correct answers. Next, I wanted to check whether **DSPy’s** built-in optimiser (SIMBA) could provide a measurable improvement without altering model weights or adding training data.
+I use `gemini/gemini-2.0-flash` as my language model with `temperature = 0.7` and `max_tokens = 2048)`. The baseline CoT agent with this LM achieved **\~ 68 %** success rate in finding the correct answers. Next, I wanted to check whether **DSPy’s** built-in optimiser (SIMBA) could provide a measurable improvement without altering model weights or adding training data.
 
 ## Optimisation with SIMBA
 
@@ -117,9 +117,9 @@ The SIMBA optimiser is part of DSPy’s *teleprompting* suite.  Its goal is simp
 
 | Idea                                         | What actually happens in code                                                                                                                                                                                                                                                                                                                    |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **1 . A pool of competing programs**         | The optimiser starts with a deepcopy of our baseline agent (`student`) and assigns it `simba_idx = 0`.  Each time it invents a new variant it registers it in `programs[]` and stores its per-example scores in `program_scores`.                                                                                                                |
-| **2 . Mini-batch, multi-candidate sampling** | For every optimisation step SIMBA draws a mini-batch (size `bsize`, here 32).  For each example it pairs **one LM clone** (with its own temperature) with **one prompt program** sampled from the pool via a soft-max over current average scores.  The wrapper `wrap_program()` runs the candidate on the example and returns the metric value. |
-| **3 . Heuristic edits**                      | New prompt variants are created by stochastic *strategies* – by default `append_a_demo` (adds a fresh “demo shot” built from a high-scoring trajectory) and `append_a_rule` (adds a short natural-language rule).  If `max_demos > 0` both strategies are active; otherwise only rules are used.                                                 |
+| **A pool of competing programs**         | The optimiser starts with a copy of our baseline agent (`student`).  Each time it invents a new variant it registers it and stores its per-example scores.                                                                                                                |
+| **Mini-batch, multi-candidate sampling** | For every optimisation step SIMBA draws a mini-batch.  For each example it pairs **one LM clone** (with its own temperature) with **one prompt program** sampled from the pool via a soft-max over current average scores. The candidate is then run on the example to return the metric value. |
+| **Heuristic edits**                      | New prompt variants are created by stochastic *strategies*, and by default a fresh “demo shot” built from a high-scoring trajectory and a short natural-language rule.  If `max_demos > 0` both strategies are active; otherwise only rules are used.                                                 |
 
 Below is a schematic of one optimisation round (with example parameters):
 
@@ -165,7 +165,7 @@ optim_agent = simba.compile(
 )
 ```
 
-Evaluating the optimized agent on the test set, it achieved **\~ 74 %** success rate in finding the correct answers. SIMBA searches over wording, shot selection, and signature details; no gradient updates are involved. Further gains would likely come from a larger demo pool, more depth of tool calling, or more aggressive rule generation. 
+When the optimized agent was evaluated on the test set, it achieved **\~ 74 %** success rate in finding the correct answers. SIMBA searches over wording, shot selection, and signature details; no gradient updates are involved. Further gains would likely come from a larger demo pool, increased tool calling depth, or more aggressive rule generation. 
 
 ## Discussion
 
@@ -188,6 +188,7 @@ For each task you see the LM’s **selected function**, the **SQL** it produced,
 | 2                               | `db_query(sql = SELECT * FROM NFL Draft Picks)`                                         | full table (truncated)                                              |
 | 3                               | `db_query(sql = SELECT Round … WHERE School/Club Team = 'Indiana' AND Pick < 198)`      | `[]`                                                                |
 | 4                               | `finish(final_answer = [])`                                                             | `done = False`                                                       |
+
 The agent almost always follows the same **schema-first → filtered-query → finish** pattern and typically completes a task in 3–4 tool calls. In the baseline, 80 % of successful cases finished within four steps; SIMBA kept that length unchanged while reducing validation errors on the first `db_query`.
 
 A single SIMBA pass—five mini-batch steps with six prompt variants each—nudged the baseline ReAct agent from **68 % to 74 %** accuracy on **dbbench-std**. The gain stems almost entirely from lower formatting and protocol mistakes; no additional reasoning depth or longer trajectories were needed.  While modest, this improvement was achieved with minimal engineering effort and a fixed language-model endpoint.
