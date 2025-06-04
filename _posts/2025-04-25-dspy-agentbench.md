@@ -1,5 +1,5 @@
 ---
-title: 'Evaluating DSPy-Based Prompt Optimisation on AgentBench'
+title: 'Evaluating DSPy-Based Optimisation on AgentBench'
 date: 2025-04-25
 permalink: /posts/2025/04/dspy-agentbench
 tags:
@@ -189,8 +189,8 @@ For each task you see the LM’s **selected function**, the **SQL** it produced,
 | 3                               | `db_query(sql = SELECT Round … WHERE School/Club Team = 'Indiana' AND Pick < 198)`      | `[]`                                                                |
 | 4                               | `finish(final_answer = [])`                                                             | `done = False`                                                       |
 
-The agent almost always follows the same **schema-first → filtered-query → finish** pattern and typically completes a task in 3–4 tool calls. In the baseline, 80 % of successful cases finished within four steps; SIMBA kept that length unchanged while reducing validation errors on the first `db_query`.
+The agent almost always follows the same **schema-first → filtered-query → finish** pattern and typically completes a task in 3–4 tool calls. In the baseline, \~ 80 % of successful cases finished within four steps; SIMBA kept that length unchanged while reducing validation errors on the first `db_query`.
 
-A single SIMBA pass—five mini-batch steps with six prompt variants each—nudged the baseline ReAct agent from **68 % to 74 %** accuracy on **dbbench-std**. The gain stems almost entirely from lower formatting and protocol mistakes; no additional reasoning depth or longer trajectories were needed.  While modest, this improvement was achieved with minimal engineering effort and a fixed language-model endpoint.
+A single SIMBA pass—five mini-batch steps with six prompt variants each—nudged the baseline ReAct agent from **\~ 68 % to \~ 74 %** accuracy on **dbbench-std**. The gain stems almost entirely from lower formatting and protocol mistakes; no additional reasoning depth or longer trajectories were needed.  While modest, this improvement was achieved with minimal engineering effort and a fixed language-model endpoint.
 
 
