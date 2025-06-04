@@ -1,7 +1,7 @@
 ---
 title: 'Teaching a 1.5-Billion-Parameter LLM to Classify Land-Use Decisions with RLVR and Spatial Heuristics'
 date: 2025-04-12
-permalink: /posts/2025/03/rlvr-classification
+permalink: /posts/2025/04/rlvr-classification
 tags:
   - artificial intelligence 
   - reinforcement learning 
