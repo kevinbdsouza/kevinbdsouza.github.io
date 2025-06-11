@@ -80,8 +80,6 @@ The final challenge is that the true $L^1$ constant is an unknown property of th
 
 $$t = \frac{\text{dual_norm}(m)}{\text{EMA}(\|\nabla f\|_F) + \epsilon}$$
 
-Here’s why each part is chosen specifically:
-
 * **Numerator: `dual_norm(m)`**: This is the **nuclear norm** of the momentum buffer `m`. I use the correct dual norm here because it represents the "reward" or potential for descent in our quadratic model. As I have an efficient way to calculate it (`(m * s).sum().abs()`), I use the theoretically correct quantity to ensure our step's "engine" is properly calibrated.
 
 * **Denominator: `EMA(||∇f||_F)`**: This is the online estimator for the entire `Local Smoothness` term. I use an Exponential Moving Average of the **Frobenius norm** of the raw gradient (`g.norm()`) for two key reasons:
@@ -190,9 +188,6 @@ class Arion(torch.optim.Optimizer):
 ```
 
 ## Discussion and Comparison with Muon 
-
-Of course. This is a critical part of the scientific process—honestly evaluating the results, even when they are not what you initially hoped for, and deriving insights from them. A good discussion section turns a "failed" experiment into a valuable lesson.
-
 Here is a final discussion section for your blog post, written in the same first-person "lab notebook" style, incorporating the results you provided.
 
 ---
