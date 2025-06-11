@@ -9,7 +9,7 @@ tags:
   - Deep Neural Networks 
 ---
 
-For the better part of a decade, Adam has been the default optimizer for training deep learning models. But the ground is shifting. As we scale to massive models, a new family of geometry-aware optimizers, most notably **Muon**[1, 2], has emerged as a promising contender. The results from the `modded-nanogpt` [3] speedrun showed that by respecting the unique geometry of neural network layers, we could achieve faster and more efficient training. This is backed by simultaneous and follow up works like Scion [4], Modular Duality [5], Gluon [6], steepest descent under a particular norm and manifold [7, 8], and spectral condition for feature learning [9]. 
+For the better part of a decade, Adam has been the default optimizer for training deep learning models. But the ground is shifting. As we scale to massive models, a new family of geometry-aware optimizers, most notably **Muon** [1, 2], has emerged as a promising contender. The results from the `modded-nanogpt` [3] speedrun showed that by respecting the unique geometry of neural network layers, we could achieve faster and more efficient training. This is backed by simultaneous and follow up works like Scion [4], Modular Duality [5], Gluon [6], steepest descent under a particular norm and manifold [7, 8], and spectral condition for feature learning [9]. 
 
 <style>
 /* affects only this file */
@@ -17,17 +17,17 @@ code             { font-size: 12px;}
 pre, pre code    { font-size: 12px;}
 </style>
 
-I was curoios of this shift and dove into the latest optimization theory. While Muon's geometric update direction provides gains, it still relies on a globally-tuned learning rate. I wanted to check if by borrowing some concepts latest research, we can create an optimizer that could determine its own step size dynamically, adapting to the unique landscape of each layer. I call this **Arion**, Adaptive-Radius with dualizatION. Arion is designed to work in tandem with the spectral condition for feature learning [9].
+I was curious of this shift and dove into the latest optimization theory. While Muon's geometric update direction provides gains, it still relies on a globally-tuned learning rate. I wanted to check if by borrowing some concepts from latest research, we can create an optimizer that could determine its own step size dynamically, adapting to the unique landscape of each layer. I call this **Arion**, Adaptive-Radius with dualizatION. Arion is designed to work in tandem with the spectral condition for feature learning [9].
 
 ## The Spectral Condition for Feature Learning
 
 Feature learning is the process where a network's hidden representations evolve meaningfully during training. If they change too little, the network effectively "freezes" and can't learn new patterns [9]. A key insight by Yang et al. [9] is that for feature learning to occur, the feature vectors `h_l` at each layer, and their updates `Δh_l`, must maintain a consistent "energy" relative to their dimension. Formally, their L2 norm should scale with the square root of the layer's width: $\|h_l\|_2 = \Theta(\sqrt{n_l})$.
 
-To satisfy this, they derive the **Spectral Scaling Condition**. This principle states that the spectral norm of a layer's weight updates, `||ΔW||*`, must scale like the square root of its fan-out to fan-in ratio:
+To satisfy this, they derive the **Spectral Scaling Condition**. This principle states that the spectral norm of a layer's weight updates, `||ΔW||_*`, must scale like the square root of its fan-out to fan-in ratio:
 
 $$\|\Delta W_\ell\|_* = \Theta\left(\sqrt{\frac{n_l}{n_{\ell-1}}}\right) = \Theta\left(\sqrt{\frac{\text{fan-out}}{\text{fan-in}}}\right)$$
 
-This is the fundamental rule. If your optimizer's updates satisfy this condition, your network will learn features effectively.
+If your optimizer's updates satisfy this condition, your network will learn features effectively.
 
 ## Using Muon with an Adaptive Radius  
 
@@ -36,8 +36,6 @@ I wanted to investigate whether complementary theoretical ideas can dualize the 
 1.  **Geometric Direction (from Muon):** Compute the momentum buffer `m` and find its nearest orthogonal matrix `s` using the Newton-Schulz iteration. This provides the correct geometric direction for an update in the spectral norm [7, 8].
 
 2. **Spectral Condition:** Make the layer-specific learning rate `η_l` proportional to `fan-out / fan-in` according to [9] and a result of dualizing the gradient under the spectral norm [7, 8, 10].  
-Of course. This is the most important part of the story, as it connects the practical algorithm to the underlying theory. Here is an improved and expanded version of that section for your blog post, complete with more details and the derivations we discussed.
-
 3.  **Adaptive Radius (from Gluon):** Use the adaptive radius derived from the **$(L^0, L^1)$-smoothness** model from Gluon [6]. This model gives us a principled way to compute a step size `t` that guarantees descent and adapts to local curvature.
 
 ## A Self-Tuning Step Size from First Principles
