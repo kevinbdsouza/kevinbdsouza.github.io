@@ -219,16 +219,16 @@ The challenge is to capture the benefits of adaptivity without paying the full c
 Overall, this experiment demonstrated the trade-offs between theoretical experiments and practical performance, and that simplicity and low FLOP count are king. 
 
 ## References 
-1. Muon. Keller Jordan blog. See: https://kellerjordan.github.io/posts/muon. 
+1. Muon. Keller Jordan blog. See: [https://kellerjordan.github.io/posts/muon](https://kellerjordan.github.io/posts/muon). 
 2. Liu, J., Su, J., Yao, X., Jiang, Z., Lai, G., Du, Y., ... & Yang, Z. (2025). Muon is scalable for llm training. arXiv preprint arXiv:2502.16982.
-3. NanoGPT Speedrun. See: https://github.com/KellerJordan/modded-nanogpt. 
+3. NanoGPT Speedrun. See: [https://github.com/KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt). 
 4. Pethick, T., Xie, W., Antonakopoulos, K., Zhu, Z., Silveti-Falls, A., & Cevher, V. (2025). Training Deep Learning Models with Norm-Constrained LMOs. arXiv preprint arXiv:2502.07529.
 5. Bernstein, J., & Newhouse, L. (2024). Modular duality in deep learning. arXiv preprint arXiv:2410.21265.
 6. Riabinin, A., Shulgin, E., Gruntkowska, K., & Richtárik, P. (2025). Gluon: Making Muon & Scion Great Again!(Bridging Theory and Practice of LMO-based Optimizers for LLMs). arXiv preprint arXiv:2505.13416.
 7. Bernstein, J., & Newhouse, L. (2024). Old optimizer, new norm: An anthology. arXiv preprint arXiv:2409.20325.
-8. Muon and a Selective Survey on Steepest Descent in Riemannian and Non-Riemannian Manifolds. Franz Louis Cesista Blog. See: https://leloykun.github.io/ponder/steepest-descent-non-riemannian/
+8. Muon and a Selective Survey on Steepest Descent in Riemannian and Non-Riemannian Manifolds. Franz Louis Cesista Blog. See: [https://leloykun.github.io/ponder/steepest-descent-non-riemannian](https://leloykun.github.io/ponder/steepest-descent-non-riemannian)
 9. Yang, G., Simon, J. B., & Bernstein, J. (2023). A spectral condition for feature learning. arXiv preprint arXiv:2310.17813.
-10. Deriving Muon. Jeremy Bernstein. See: https://jeremybernste.in/writing/deriving-muon
+10. Deriving Muon. Jeremy Bernstein. See: [https://jeremybernste.in/writing/deriving-muon](https://jeremybernste.in/writing/deriving-muon)
 
 
 
