@@ -1,7 +1,7 @@
 ---
 title: 'Evaluating a Self-Tuning Version of Muon on the NanoGPT Speedrun'
 date: 2025-05-01
-permalink: /posts/2025/04/arion-nanogpt
+permalink: /posts/2025/05/arion-nanogpt
 tags:
   - Muon 
   - Optimizer 
