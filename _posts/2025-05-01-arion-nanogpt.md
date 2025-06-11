@@ -204,7 +204,7 @@ My initial hypothesis that a more precise, adaptive step size would lead to supe
 Some observations:
 
 **1. The Spectral Condition is a Powerful Baseline.**
-The primary lesson here is just how effective Muon's core recipe is. The work of Yang et al. [9]showed that enforcing the `sqrt(fan-out/fan-in)` scaling is critical for feature learning. Muon, with its orthogonal updates and a well-tuned learning rate, already implements a highly effective approximation of this condition. My results suggest that for a stable architecture like NanoGPT, getting this architectural scaling right accounts for the vast majority of the performance gains over traditional optimizers. The additional layer of fine-grained, step-by-step adaptivity offered by Arion provides diminishing returns that can't justify the computational overhead.
+The primary lesson here is just how effective Muon's core recipe is. The work of Yang et al. [9] showed that enforcing the `sqrt(fan-out/fan-in)` scaling is critical for feature learning. Muon, with its orthogonal updates and a well-tuned learning rate, already implements a highly effective approximation of this condition. My results suggest that for a stable architecture like NanoGPT, getting this architectural scaling right accounts for the vast majority of the performance gains over traditional optimizers. The additional layer of fine-grained, step-by-step adaptivity offered by Arion provides diminishing returns that can't justify the computational overhead.
 
 **2. There is a "FLOPs Budget" for Theory.**
 Arion succeeded in its goal of removing layer-specific learning rate tuning. Its adaptive radius, derived from the $(L^0, L^1)$-smoothness model of Riabinin et al. [6] is theoretically promising. However, it has a computational cost. The per-step calculation of the Frobenius norm (`g.norm()`) and the dual norm (`torch.tensordot`), even if individually fast, adds up to a significant overhead when performed across all layers at every iteration. This highlights that an optimizer must be evaluated not just on its theoretical convergence rate in steps, but on its practical convergence rate per second. The additional FLOPs introduced by Arion's adaptivity were not "free," and in this case, the simpler and faster Muon update won the race.
@@ -216,7 +216,7 @@ The challenge is to capture the benefits of adaptivity without paying the full c
 * **Asynchronous Adaptivity:** Does the adaptive radius `t` need to be updated at every single step? It's possible that updating it every 5 or 10 steps would provide most of the benefit while amortizing the computational cost.
 * **Hybrid Approaches:** Perhaps the optimal solution is a hybrid: use the fixed `sqrt(fan-out/fan-in)` scaling from Muon, but use a very simple, low-cost adaptive global multiplier based on the average gradient norm across the entire model, rather than a per-layer calculation.
 
-This experiment demonstrated the trade-offs between theoretical experiments and practical performance, and that simplicity and low FLOP count are king. 
+Overall, this experiment demonstrated the trade-offs between theoretical experiments and practical performance, and that simplicity and low FLOP count are king. 
 
 ## References 
 1. Muon. Keller Jordan blog. See: https://kellerjordan.github.io/posts/muon. 
