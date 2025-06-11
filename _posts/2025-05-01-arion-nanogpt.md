@@ -188,12 +188,6 @@ class Arion(torch.optim.Optimizer):
 ```
 
 ## Discussion and Comparison with Muon 
-Here is a final discussion section for your blog post, written in the same first-person "lab notebook" style, incorporating the results you provided.
-
----
-
-### **Discussion: An Unexpected Result and the Price of Adaptivity**
-
 After finalizing the `Arion` implementation, I pitted it against the optimized Muon baseline from the `modded-nanogpt` speed runs. The goal was to see if a theoretically-grounded, self-tuning step size could not only simplify tuning but also unlock faster convergence. I ran both optimizers on the standard NanoGPT benchmark for 5000 steps on a single node with two A100 40GB GPUs.
 
 The results are humbling.
