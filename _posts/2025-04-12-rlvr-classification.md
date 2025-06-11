@@ -262,6 +262,6 @@ The model almost always honours the required tag structure, uses a concise singl
 
 How does this compare with decision trees for interpretable rules? Decision trees are simpler, cheaper, and structurally transparent, but they can neither converse with planners nor ingest messy qualitative context the way an LLM can. In practice the language model’s `<think>` block gives domain-specific planners a narrative explanation they can accept, critique, or refine—capabilities that a static rule list cannot match. Heuristics remain simple (one- or two-factor scoring, local neighbourhood reasoning); yet the variety of tie-breakers (habitat corridor logic, global baseline reminder) introduces diversity that RLVR can exploit.
 
-Even at 1.5 B parameters the model costs real GPU time, but the trade-off is a conversational agent that captures 65 % of the oracle’s decisions and—crucially—speaks its reasoning out loud. That makes the answer to our opening question a guarded *yes*: with RLVR providing a verifiable signal, a smallish LLM can indeed learn to classify spatial decisions while explaining itself in plain language. 
+Even at 1.5 B parameters the model costs real GPU time, but the trade-off is a conversational agent that captures 65 % of the oracle’s decisions and crucially, speaks its reasoning out loud. That makes the answer to our opening question a guarded *yes*: with RLVR providing a verifiable signal, a smallish LLM can indeed learn to classify spatial decisions while explaining itself in plain language. 
 
 
