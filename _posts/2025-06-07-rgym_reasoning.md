@@ -55,13 +55,13 @@ Real tasks ping-pong between these directions. Example: to debug scientific code
    Because every sub-step is labelled, we get a confusion matrix over modes rather than a single-bit accuracy flag. If a run collapses whenever abduction is step #3, we have a clear research question: *why does hypothesis selection fail only when the context window is half-full?*
 
 ## Implementing the Multi-step Reasoning Task
-The dataset generator is a concise \~150 lines of Python. The core logic involves:
+The core logic of the task generator involves:
 
 1.  A `@dataclass` to hold the configuration (`min_steps`, `max_steps`, etc.).
 2.  Four helper methods (`_deduction`, `_induction`, `_abduction`, `_transduction`), each of which takes the current state, performs a transformation, and returns a new natural-language prompt.
 3.  A public `__getitem__` method that stitches together a random sequence of these steps and appends a final "What is the answer?" query.
 
-Because every answer can be deterministically derived from the state, verification is a straightforward and constant-time operation. Check out the implementation [here](https://github.com/kevinbdsouza/reasoning-gym/blob/main/reasoning_gym/logic/multi_step_reasoning.py). See a small excerpt below. 
+Because every answer can be deterministically derived from the state, verification is a straightforward and constant-time operation. Check out the implementation [here](https://github.com/kevinbdsouza/reasoning-gym/blob/main/reasoning_gym/logic/multi_step_reasoning.py) and see a small excerpt below. 
 
 ```python
 class MultiStepReasoningDataset(ProceduralDataset):

@@ -11,7 +11,7 @@ tags:
 
 When I asked whether a compact 1.5-B parameter model could double as a local land-use classifier, I was really probing two things at once:
 1. Expressive power: do today’s distilled language models understand enough geography and have enough spatial awareness to be decision makers? 
-2. RLVR: can reinforcement learning from verifiable rewards (RLVR) scale beyond toy domains?
+2. RLVR: can reinforcement learning from verifiable rewards (RLVR) scale beyond familiar domains?
 
 <style>
 /* affects only this file */
