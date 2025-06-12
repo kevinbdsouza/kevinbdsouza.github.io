@@ -5,7 +5,6 @@ permalink: /posts/2025/05/arion-nanogpt
 tags:
   - Muon 
   - Optimizer 
-  - AI
   - Deep Neural Networks 
 ---
 
