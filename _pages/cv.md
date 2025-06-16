@@ -19,7 +19,7 @@ Work experience
 * ## Researcher, Royal Bank of Canada <span style="color:#2C4381">(July 2024 - Present)</span> 
   * Working on LLM's + evolutionary strategies and Reinforcement learning from verifiable rewards (RLVR) for spatial optimization using heuristics. 
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
-  * Worked alongside the team to develop an AI framework for metal-organic framework (MOF) discovery for carbon capture and storage applications 
+  * Worked alongside the team to improving factual accuracy in LLMs. See thoughts compiled later [here](https://kevinbdsouza.github.io/posts/2024/12/enhancing-factual-accuracy-in-large-language-models). 
 * ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns.
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
