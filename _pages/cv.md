@@ -20,12 +20,11 @@ Work experience
   * Working on LLM's + evolutionary strategies and Reinforcement learning from verifiable rewards (RLVR) for spatial optimization using heuristics. 
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
   * Worked alongside the team to improving factual accuracy in LLMs. See thoughts compiled later [here](https://kevinbdsouza.github.io/posts/2024/12/enhancing-factual-accuracy-in-large-language-models). 
-* ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Feb 2023 - May 2023)</span> 
+* ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - May 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns.
+  * Designed antibodies using sequence and structure based Machine Learning, energy metrics, and bayesian optimization.
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
   * Designed representation learning strategies for <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>chromatin structure</u></a> and the <a href="https://ieeexplore.ieee.org/document/9442933"><u>epigenome</u></a>.
-* ## Machine Learning Intern, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - Dec 2022)</span> 
-  * Designed antibodies using sequence and structure based Machine Learning, energy metrics, and bayesian optimization.
 * ## Machine Learning Intern, <a href="https://www.skycope.com/"><u>Skycope Technologies</u></a> <span style="color:#2C4381"> (May 2018 - Sep 2018)</span>
   * Built Skycope's data and machine learning infrastructure. Integrated  <a href="https://ieeexplore.ieee.org/abstract/document/9075413"><u>ML</u></a> into Skycope's existing software stack, which is now it's flagship drone detection software.
 
