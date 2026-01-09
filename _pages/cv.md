@@ -13,14 +13,17 @@ I'm a postdoctoral fellow at the University of Waterloo working at the intersect
 
 Work experience
 ======
-* ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Present)</span> 
+* ## AI Consultant <span style="color:#2C4381">(Dec 2025 - Present)</span> 
+  * Working with businesses and organizations to either ingest AI into their existing workflows or build
+custom AI solutions for them.
+* ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Dec 2025)</span> 
   * Consulting on multiple projects in AI for science. 
   * NSERC fellow starting October '24
-* ## Researcher, Royal Bank of Canada <span style="color:#2C4381">(July 2024 - Present)</span> 
+* ## Researcher, Royal Bank of Canada <span style="color:#2C4381">(July 2024 - June 2025)</span> 
   * Working on LLM's + evolutionary strategies and Reinforcement learning from verifiable rewards (RLVR) for spatial optimization using heuristics. 
 * ## AI Consultant, Stealth Startups <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span> 
   * Worked alongside the team to improving factual accuracy in LLMs. See thoughts compiled later [here](https://kevinbdsouza.github.io/posts/2024/12/enhancing-factual-accuracy-in-large-language-models). 
-* ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - May 2023)</span> 
+* ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - Sep 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns.
   * Designed antibodies using sequence and structure based Machine Learning, energy metrics, and bayesian optimization.
 * ## Ph.D. Candidate, The University of British Columbia <span style="color:#2C4381">(Jan 2019 - Feb 2023)</span> 
