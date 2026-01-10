@@ -33,8 +33,8 @@
     const particleCount = 60;
     const connectionDistance = 120;
     const mouseDistance = 150;
-    const particleColor = 'rgba(218, 165, 32, 0.6)'; // GoldenRod
-    const lineColor = 'rgba(218, 165, 32, 0.2)';   // GoldenRod lines
+    const particleColor = 'rgba(218, 165, 32, 0.6)'; /* GoldenRod */
+    const lineColor = 'rgba(218, 165, 32, 0.2)';   /* GoldenRod lines */
 
     const mouse = { x: null, y: null };
 
@@ -42,7 +42,7 @@
       constructor() {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.vx = (Math.random() - 0.5) * 0.5; // Slow movement
+        this.vx = (Math.random() - 0.5) * 0.5; /* Slow movement */
         this.vy = (Math.random() - 0.5) * 0.5;
         this.size = Math.random() * 2 + 1;
       }
@@ -65,11 +65,11 @@
           const forceDirectionY = dy / distance;
           const force = (mouseDistance - distance) / mouseDistance;
           const directionX = forceDirectionX * force * this.size;
-          const directionY = forceDirectionY * force * this.size; // Push away slightly? element
+          const directionY = forceDirectionY * force * this.size; /* Push away slightly? element */
 
-          // Actually, let's just gently attract or repel. Let's repel for "constellation" feel
-          // this.x -= directionX * 0.5; // Repel
-          // this.y -= directionY * 0.5;
+          /* Actually, let's just gently attract or repel. Let's repel for "constellation" feel */
+          /* this.x -= directionX * 0.5; */ /* Repel */
+          /* this.y -= directionY * 0.5; */
         }
       }
 
@@ -124,7 +124,7 @@
 
     window.addEventListener('resize', () => {
       resize();
-      init(); // Re-init particles on resize to avoid them getting stuck out of bounds
+      init(); /* Re-init particles on resize to avoid them getting stuck out of bounds */
     });
 
     canvas.addEventListener('mousemove', (e) => {
