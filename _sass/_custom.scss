@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Typography Overrides */
+html,
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    color: #333;
+    /* Slightly softer black */
+}
+
+body {
+    background-color: #fafafa;
+    /* Very light gray background for less harshness */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    /* Tighter letter spacing for modern look */
+}
+
+.page__title {
+    font-weight: 700;
+    color: #111;
+}
+
+p,
+li,
+a {
+    line-height: 1.7;
+    /* increased line height for readability */
+}
+
+/* Layout Tweaks */
+.page__inner-wrap {
+    max-width: 900px !important;
+    /* Slightly wider reading area if needed, or keep standard */
+}
+
+/* Header/Nav enhancements */
+.masthead {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.masthead__menu a {
+    font-weight: 500;
+}
+
+/* Animation Container Spacing */
+.animation-wrapper {
+    margin-bottom: 3rem;
+}
+
+/* Link Styling */
+a {
+    color: #0066cc;
+    /* Professional blue */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
