@@ -9,13 +9,12 @@ redirect_from:
 
 {% include base_path %}
  
-I'm a postdoctoral fellow at the University of Waterloo working at the intersection of AI and science. Previosuly, I worked in AI for Biology. I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. For my Ph.D., I designed <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>representations for Biology</u></a>, working with <a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>.  
+I'm an AI engineer and researcher, helping organizations and businesses become AI native. Previously, I was a researcher at the University of Waterloo working at the intersection of AI and science. Before that, I worked in AI for Biology. I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. For my Ph.D., I designed <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>representations for Biology</u></a>, working with <a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>.  
 
 Work experience
 ======
 * ## AI Consultant <span style="color:#2C4381">(Dec 2025 - Present)</span> 
-  * Working with businesses and organizations to either ingest AI into their existing workflows or build
-custom AI solutions for them.
+  * Working with businesses and organizations to either ingest AI into their existing workflows or build custom AI solutions for them.
 * ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Dec 2025)</span> 
   * Consulting on multiple projects in AI for science. 
   * NSERC fellow starting October '24
