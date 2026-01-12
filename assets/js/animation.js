@@ -57,10 +57,14 @@
       }
 
       function resize() {
+        const dpr = window.devicePixelRatio || 1;
         width = canvas.parentElement.offsetWidth;
         height = canvas.parentElement.offsetHeight;
-        canvas.width = width;
-        canvas.height = height;
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+        canvas.width = Math.round(width * dpr);
+        canvas.height = Math.round(height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       }
 
       function init() {
