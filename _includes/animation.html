@@ -2,8 +2,10 @@
   <canvas id="network-canvas"></canvas>
 </div>
 <div class="animation-cta">
-  <p>Reach out for queries or collaborations.</p>
-  <a class="animation-cta__button" href="mailto:kevinbradsouza@gmail.com">Reach out</a>
+  <p>
+    <a class="animation-cta__link" href="mailto:kevinbradsouza@gmail.com">Reach out</a>
+    for queries or collaborations.
+  </p>
 </div>
 
 <style>
@@ -22,6 +24,8 @@
     height: 100%;
     display: block;
     background: transparent;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     /* Or a specific background color if needed */
   }
 
@@ -38,24 +42,16 @@
     font-size: 1.05rem;
   }
 
-  .animation-cta__button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.6rem 1.4rem;
-    border-radius: 999px;
-    background-color: #1a1a1a;
-    color: #fff;
-    text-decoration: none;
+  .animation-cta__link {
+    color: #1a1a1a;
     font-weight: 600;
-    letter-spacing: 0.01em;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
   }
 
-  .animation-cta__button:hover,
-  .animation-cta__button:focus {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  .animation-cta__link:hover,
+  .animation-cta__link:focus {
+    color: #000;
   }
 </style>
 
