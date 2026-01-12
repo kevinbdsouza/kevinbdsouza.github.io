@@ -1,6 +1,10 @@
 <div class="animation-wrapper">
   <canvas id="network-canvas"></canvas>
 </div>
+<div class="animation-cta">
+  <p>Reach out for queries or collaborations.</p>
+  <a class="animation-cta__button" href="mailto:kevinbradsouza@gmail.com">Reach out</a>
+</div>
 
 <style>
   .animation-wrapper {
@@ -19,6 +23,39 @@
     display: block;
     background: transparent;
     /* Or a specific background color if needed */
+  }
+
+  .animation-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .animation-cta p {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .animation-cta__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .animation-cta__button:hover,
+  .animation-cta__button:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
   }
 </style>
 
