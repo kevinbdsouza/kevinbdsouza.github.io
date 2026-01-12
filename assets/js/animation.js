@@ -57,7 +57,9 @@
       }
 
       function resize() {
-        const dpr = window.devicePixelRatio || 1;
+        const baseDpr = window.devicePixelRatio || 1;
+        const renderScale = 1.75;
+        const dpr = Math.min(baseDpr * renderScale, 3);
         width = canvas.parentElement.offsetWidth;
         height = canvas.parentElement.offsetHeight;
         canvas.style.width = `${width}px`;
