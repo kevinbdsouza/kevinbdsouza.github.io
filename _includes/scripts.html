@@ -3,6 +3,11 @@
   (function() {
     function openLinksInNewTabs() {
       document.querySelectorAll('a[href]').forEach(function(link) {
+        if (link.closest('.masthead')) {
+          link.removeAttribute('target');
+          return;
+        }
+
         link.setAttribute('target', '_blank');
 
         var rel = link.getAttribute('rel');

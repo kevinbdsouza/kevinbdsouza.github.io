@@ -54,6 +54,24 @@ a {
     font-weight: 500;
 }
 
+.masthead__menu a.current {
+    background: #eef5ff;
+    border-radius: 8px;
+    color: #174a7c;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.masthead__menu a.current:hover {
+    background: #e1efff;
+    color: #103b63;
+    text-decoration: none;
+}
+
+.greedy-nav .visible-links a.current::before {
+    display: none;
+}
+
 /* Animation Container Spacing */
 .animation-wrapper {
     margin-bottom: 3rem;
