@@ -1,4 +1,41 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script>
+  (function() {
+    function openLinksInNewTabs() {
+      document.querySelectorAll('a[href]').forEach(function(link) {
+        link.setAttribute('target', '_blank');
+
+        var rel = link.getAttribute('rel');
+        if (!rel) {
+          link.setAttribute('rel', 'noopener noreferrer');
+        } else {
+          var relValues = rel.split(/\s+/);
+          if (relValues.indexOf('noopener') === -1) relValues.push('noopener');
+          if (relValues.indexOf('noreferrer') === -1) relValues.push('noreferrer');
+          link.setAttribute('rel', relValues.join(' ').trim());
+        }
+      });
+    }
+
+    openLinksInNewTabs();
+
+    if (window.jQuery) {
+      window.jQuery(function() {
+        openLinksInNewTabs();
+        window.jQuery('a').off('click.smoothscroll');
+      });
+    } else if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', openLinksInNewTabs);
+    }
+
+    if ('MutationObserver' in window) {
+      new MutationObserver(openLinksInNewTabs).observe(document.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    }
+  })();
+</script>
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
