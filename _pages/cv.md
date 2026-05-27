@@ -22,8 +22,7 @@ Work experience
   * NSERC fellow starting October '24
 * ## Researcher, Royal Bank of Canada <span style="color:#2C4381">(July 2024 - June 2025)</span> 
   * Working on LLM's + evolutionary strategies and Reinforcement learning from verifiable rewards (RLVR) for spatial optimization using heuristics. 
-* ## AI Consultant, Stealth Startup <span style="color:#2C4381">(Jun 2023 - Sep 2023)</span>
-  * Worked alongside the team to improving factual accuracy in LLMs. See thoughts compiled later [here](https://kevinbdsouza.github.io/posts/2024/12/enhancing-factual-accuracy-in-large-language-models). 
+
 * ## Machine Learning Engineer, <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a> <span style="color:#2C4381">(Jun 2022 - Sep 2023)</span> 
   * Integrated molecular dynamics based conformation search with deep learning based protein design for protein affinity maturation. Gandeeva will use this platform for their future protein affinity maturation campaigns.
   * Designed antibodies using sequence and structure based Machine Learning, energy metrics, and bayesian optimization.

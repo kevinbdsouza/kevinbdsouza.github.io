@@ -48,6 +48,10 @@
           <p>Under Revision in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' and post.status == 'submitted' %}
           <p>Submitted, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' and post.status == 'accepted_at' %}
+          <p>Accepted at <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' and post.status == 'accepted_in' %}
+          <p>Accepted in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
         {% elsif post.collection == 'publications' and post.status == 'preparing' %}
           <p>Preparing for submission, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
