@@ -13,11 +13,11 @@ I'm an AI engineer and researcher, helping organizations and businesses become A
 
 Work experience
 ======
-* ## NSERC Postdoctoral Fellow, IISc Bengaluru <span style="color:#2C4381">(Jan 2026 - Present)</span>
-  * Working on automated scientific discovery and AI for science projects.
 * ## Founder, <a href="https://platforms.symbolialabs.com/"><u>Symbolia Labs</u></a> <span style="color:#2C4381">(Feb 2026 - Present)</span> 
   * Building AI-native platforms for science, health, climate, and public-good innovation.
   * Working with enterprises to deploy custom AI solutions for their workflows.
+* ## NSERC Postdoctoral Fellow, IISc Bengaluru <span style="color:#2C4381">(Jan 2026 - Present)</span>
+  * Working on automated scientific discovery and AI for science projects.
 * ## Postdoctoral Fellow, University of Waterloo <span style="color:#2C4381">(Oct 2023 - Dec 2025)</span> 
   * Consulting on multiple projects in AI for science. 
   * NSERC fellow starting October '24
