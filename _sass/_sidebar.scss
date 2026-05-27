@@ -86,6 +86,10 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    /* Fix for downscaling pixelation / moiré effect on mobile */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
 
     @include breakpoint($large) {
       padding: 5px;
