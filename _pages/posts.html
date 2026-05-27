@@ -8,10 +8,95 @@ redirect_from:
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-  {% capture written_year %}{{ year }}{% endcapture %}
-  {% include archive-single.html %}
+
+<style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.2s;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  color: #64748b;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid #3b82f6; 
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  animation: fadeEffect 0.4s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'Tinkering')">Tinkering</button>
+  <button class="tablinks" onclick="openTab(event, 'AI')">AI</button>
+  <button class="tablinks" onclick="openTab(event, 'Biology')">Biology</button>
+  <button class="tablinks" onclick="openTab(event, 'Climate')">Climate</button>
+</div>
+
+{% assign categories = "Tinkering, AI, Biology, Climate" | split: ", " %}
+
+{% for cat in categories %}
+  <div id="{{ cat }}" class="tabcontent" {% if cat == 'Tinkering' %}style="display:block;"{% endif %}>
+    {% assign category_posts = site.posts | where: "category", cat %}
+    {% for post in category_posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </div>
 {% endfor %}
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  
+  // Hide all tab contents
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  
+  // Remove the active class from all tab links
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>

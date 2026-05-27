@@ -1,5 +1,6 @@
 ---
 title: 'Teaching a 1.5-Billion-Parameter LLM to Classify with RLVR and Spatial Heuristics'
+category: 'Tinkering'
 date: 2025-04-12
 permalink: /posts/2025/04/rlvr-classification
 tags:

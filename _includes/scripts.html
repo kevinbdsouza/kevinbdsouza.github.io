@@ -8,16 +8,22 @@
           return;
         }
 
-        link.setAttribute('target', '_blank');
+        // Only open external links in a new tab
+        if (link.hostname !== window.location.hostname) {
+          link.setAttribute('target', '_blank');
 
-        var rel = link.getAttribute('rel');
-        if (!rel) {
-          link.setAttribute('rel', 'noopener noreferrer');
+          var rel = link.getAttribute('rel');
+          if (!rel) {
+            link.setAttribute('rel', 'noopener noreferrer');
+          } else {
+            var relValues = rel.split(/\s+/);
+            if (relValues.indexOf('noopener') === -1) relValues.push('noopener');
+            if (relValues.indexOf('noreferrer') === -1) relValues.push('noreferrer');
+            link.setAttribute('rel', relValues.join(' ').trim());
+          }
         } else {
-          var relValues = rel.split(/\s+/);
-          if (relValues.indexOf('noopener') === -1) relValues.push('noopener');
-          if (relValues.indexOf('noreferrer') === -1) relValues.push('noreferrer');
-          link.setAttribute('rel', relValues.join(' ').trim());
+          // It's an internal link, remove target="_blank" if it was set
+          link.removeAttribute('target');
         }
       });
     }

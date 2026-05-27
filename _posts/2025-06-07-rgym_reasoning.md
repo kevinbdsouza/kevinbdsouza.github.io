@@ -1,5 +1,6 @@
 ---
 title: 'Stress-Testing LLMs With Reasoning Gym: Building & Training a Multi-step Reasoning Task'
+category: 'Tinkering'
 date: 2025-06-07
 permalink: /posts/2025/06/rgym-reasoning
 tags:

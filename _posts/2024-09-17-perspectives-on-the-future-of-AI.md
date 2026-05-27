@@ -1,5 +1,6 @@
 ---
 title: 'Perspectives on the Future of AI'
+category: 'AI'
 date: 2024-09-17
 permalink: /posts/2024/09/perspectives-on-the-future-of-AI
 tags:

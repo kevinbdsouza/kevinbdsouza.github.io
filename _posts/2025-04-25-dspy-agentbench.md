@@ -1,5 +1,6 @@
 ---
 title: 'Evaluating DSPy-Based Optimisation on AgentBench'
+category: 'Tinkering'
 date: 2025-04-25
 permalink: /posts/2025/04/dspy-agentbench
 tags:

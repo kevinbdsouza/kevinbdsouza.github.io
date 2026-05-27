@@ -1,5 +1,6 @@
 ---
 title: 'Enhancing Factual Accuracy in Large Language Models: Integrating Decoding Strategies and Model Steering'
+category: 'AI'
 date: 2024-12-02
 permalink: /posts/2024/12/enhancing-factual-accuracy-in-large-language-models
 tags:

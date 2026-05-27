@@ -1,5 +1,6 @@
 ---
 title: 'Evaluating a Self-Tuning Version of Muon on the NanoGPT Speedrun'
+category: 'Tinkering'
 date: 2025-05-01
 permalink: /posts/2025/05/arion-nanogpt
 tags:

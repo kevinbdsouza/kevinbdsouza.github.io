@@ -1,5 +1,6 @@
 ---
 title: 'Climate Risks for India in the Coming Decades and the Need to Invest in Adaptation Projects'
+category: 'Climate'
 date: 2024-08-15
 permalink: /posts/2024/08/climate-risks-for-india-need-for-adaptation
 tags:

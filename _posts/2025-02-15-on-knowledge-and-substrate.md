@@ -1,5 +1,6 @@
 ---
 title: 'On Knowledge and Substrate'
+category: 'AI'
 date: 2025-02-15
 permalink: /posts/2025/02/on-knowledge-and-substrate
 tags:

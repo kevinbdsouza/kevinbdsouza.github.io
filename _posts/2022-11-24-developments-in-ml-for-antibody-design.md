@@ -1,5 +1,6 @@
 ---
 title: 'Developments in Machine Learning for Antibody Design'
+category: 'Biology'
 date: 2022-11-24
 permalink: /posts/2022/11/developments-in-ml-for-antibody-design
 tags:
