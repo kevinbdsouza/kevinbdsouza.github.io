@@ -55,12 +55,17 @@ layout: default
           <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>Full Paper</u></a></p>
         {% elsif page.citation %}
           <p>Recommended citation: {{ page.citation }} </p>
+        {% elsif page.paperurl %}
+          <p>Download <a href=" {{ page.paperurl }} "><u>here</u></a></p>
         {% endif %}
     
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'publications' and page.excerpt %}
+          {{ page.excerpt | markdownify }}
+        {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
