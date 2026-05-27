@@ -8,7 +8,6 @@
           return;
         }
 
-        // Only open external links in a new tab
         if (link.hostname !== window.location.hostname) {
           link.setAttribute('target', '_blank');
 
@@ -22,7 +21,7 @@
             link.setAttribute('rel', relValues.join(' ').trim());
           }
         } else {
-          // It's an internal link, remove target="_blank" if it was set
+          /* It's an internal link, remove target="_blank" if it was set */
           link.removeAttribute('target');
         }
       });
