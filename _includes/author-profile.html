@@ -8,9 +8,22 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
+      <img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+      <img
+        src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}"
+        {% if author.avatar contains "kevin-avatar-" %}
+          srcset="
+            {{ "/images/kevin-avatar-220.jpg" | prepend: base_path }} 220w,
+            {{ "/images/kevin-avatar-350.jpg" | prepend: base_path }} 350w,
+            {{ "/images/kevin-avatar-440.jpg" | prepend: base_path }} 440w,
+            {{ "/images/kevin-avatar-700.jpg" | prepend: base_path }} 700w"
+          sizes="(min-width: 1024px) 175px, 110px"
+        {% endif %}
+        width="110"
+        height="110"
+        decoding="async"
+        alt="{{ author.name }}">
     {% endif %}
   </div>
 

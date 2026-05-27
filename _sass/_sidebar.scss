@@ -82,14 +82,12 @@
   }
 
   img {
+    display: block;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    /* Fix for downscaling pixelation / moiré effect on mobile */
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    backface-visibility: hidden;
+    image-rendering: auto;
 
     @include breakpoint($large) {
       padding: 5px;
