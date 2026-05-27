@@ -1,7 +1,7 @@
 ---
 title: "Representation Learning Strategies for the Epigenome and Chromatin Structure using Recurrent Neural Models"
 collection: projects
-type: "Thesis"
+type: "Ph.D."
 about: "Thesis"
 permalink: /projects/phd_thesis
 date: 2023-02-15
