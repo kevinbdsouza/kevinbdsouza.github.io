@@ -7,6 +7,6 @@ excerpt: "Agricultural landscapes face the dual challenge of sustaining food pro
 date: 2026-01-01
 venue: 'NPJ Sustainable Agriculture'
 paperurl: 'https://arxiv.org/abs/2508.06386'
-citation: 'Dsouza, K. B., Watt, G. A., Leonenko, Y., & Moreno-Cruz, J. (2025). Bridging Farm Economics and Landscape Ecology for Global Sustainability through Hierarchical and Bayesian Optimization. arXiv preprint arXiv:2508.06386.'
+citation: 'Dsouza, K. B., Watt, G. A., Leonenko, Y., & Moreno-Cruz, J. (2025). Bridging Farm Economics and Landscape Ecology for Global Sustainability through Hierarchical and Bayesian Optimization. arXiv preprint arXiv:2508.06386. Accepted in NPJ Sustainable Agriculture, 2026.'
 ---
 

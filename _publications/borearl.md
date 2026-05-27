@@ -7,7 +7,7 @@ excerpt: "Boreal forests store 30-40% of terrestrial carbon, much in climate-vul
 date: 2026-03-01
 venue: 'ICLR'
 paperurl: 'https://arxiv.org/abs/2509.19846'
-citation: 'Dsouza, K. B., Ofosu, E., Amaogu, D. C., Pigeon, J., Boudreault, R., Maghoul, P., ... & Leonenko, Y. (2025). BoreaRL: A Multi-Objective Reinforcement Learning Environment for Climate-Adaptive Boreal Forest Management. arXiv preprint arXiv:2509.19846.'
+citation: 'Dsouza, K. B., Ofosu, E., Amaogu, D. C., Pigeon, J., Boudreault, R., Maghoul, P., ... & Leonenko, Y. (2025). BoreaRL: A Multi-Objective Reinforcement Learning Environment for Climate-Adaptive Boreal Forest Management. arXiv preprint arXiv:2509.19846. Accepted at ICLR, 2026.'
 ---
 
 <!--  Only the pages you care about need this copy: -->
