@@ -62,16 +62,16 @@ redirect_from:
 </style>
 
 <div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'Tinkering')">Tinkering</button>
-  <button class="tablinks" onclick="openTab(event, 'AI')">AI</button>
+  <button class="tablinks active" onclick="openTab(event, 'AI')">AI</button>
+  <button class="tablinks" onclick="openTab(event, 'Tinkering')">Tinkering</button>
   <button class="tablinks" onclick="openTab(event, 'Biology')">Biology</button>
   <button class="tablinks" onclick="openTab(event, 'Climate')">Climate</button>
 </div>
 
-{% assign categories = "Tinkering, AI, Biology, Climate" | split: ", " %}
+{% assign categories = "AI, Tinkering, Biology, Climate" | split: ", " %}
 
 {% for cat in categories %}
-  <div id="{{ cat }}" class="tabcontent" {% if cat == 'Tinkering' %}style="display:block;"{% endif %}>
+  <div id="{{ cat }}" class="tabcontent" {% if cat == 'AI' %}style="display:block;"{% endif %}>
     {% assign category_posts = site.posts | where: "category", cat %}
     {% for post in category_posts %}
       {% include archive-single.html %}
