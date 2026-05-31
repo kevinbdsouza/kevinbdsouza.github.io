@@ -10,7 +10,7 @@ tags:
   - scalable oversight
 ---
 
-*I am fairly confident that the oversight problem around AI scientist agents will become important in the near future, although I am much less confident about which specific oversight mechanisms will survive contact with stronger agents and the strange incentives of scientific institutions.*
+I am fairly confident that the oversight problem around AI scientist agents will become important in the near future, although I am much less confident about which specific oversight mechanisms will survive contact with stronger agents and the strange incentives of scientific institutions.
 
 AI scientist agents are often judged by their ability to produce something that resembles a research paper. However, scientific discovery is more of a feedback process where ideas are repeatedly forced into contact with all the awkward resistance of the world. This resistance can come in many forms depending on the domain, whether it requires conducting experiments in the world as in biology/material science, running high-fidelity process-based simulations as in climate, or verifying against a formal checker as in mathematics.
 
