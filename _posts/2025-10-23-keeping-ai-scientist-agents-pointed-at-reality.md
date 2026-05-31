@@ -1,8 +1,8 @@
 ---
 title: 'Keeping AI Scientist Agents Pointed at Reality'
 category: 'AI'
-date: 2026-05-31
-permalink: /posts/2026/05/keeping-ai-scientist-agents-pointed-at-reality
+date: 2025-10-23
+permalink: /posts/2025/10/keeping-ai-scientist-agents-pointed-at-reality
 tags:
   - AI scientist agents
   - AI safety
