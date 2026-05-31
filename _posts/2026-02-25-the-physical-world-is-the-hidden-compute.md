@@ -10,7 +10,7 @@ tags:
   - robotics
 ---
 
-Epistemic status: fairly speculative and written mostly as a way of organizing intuitions which have been bouncing around my head for a while, although I think the core point is probably right in the boring sense that every scientist already knows it implicitly.
+Fairly speculative and written mostly as a way of organizing intuitions which have been bouncing around my head for a while, although I think the core point is probably right in the boring sense that every scientist already knows it implicitly.
 
 I have recently been thinking a lot about the future of AI and scientific discovery through the lens of substrate, by which I mean the literal physical medium in which cognition, experiment, measurement, simulation, and discovery take place. This sounds somewhat grandiose, and perhaps it is, but I think it points at a real confusion in how we talk about AI scientists, because a lot of the discussion implicitly treats scientific discovery as if it were primarily an exercise in manipulating propositions inside a model's context window, while the actual history of science looks much more like a sequence of increasingly clever ways to couple human cognition to the physical world.
 
