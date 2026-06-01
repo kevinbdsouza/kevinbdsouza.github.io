@@ -56,7 +56,7 @@ There is a comforting thought that laboratory feedback will eventually disciplin
 
 This is especially important in closed-loop discovery because the easiest feedback is often the feedback that gets optimized first. If a fast screen is cheap and mechanistic validation is slow, the agent may become excellent at producing fast-screen winners. If a simulation is cheap and field evidence is slow, the agent may become excellent at producing simulation winners. The gap between those winners and real discoveries is where many failures will live.
 
-I feel good human scientists often understand this through tacit experience. They know which assays are treacherous, which controls matter, and which effects are usually artefacts. AI oversight needs to preserve that kind of judgement while also building machinery that can scale beyond one person's attention.
+I feel good human scientists often understand this through tacit experience. They know which assays are treacherous, which controls matter, and which effects are usually artefacts. AI oversight needs to preserve that kind of judgement while also building machinery that can scale beyond one person.
 
 ## Oversight theatre in the laboratory
 
