@@ -39,11 +39,11 @@ Work experience
         <img src="/images/iisc.png" alt="IISc Bengaluru logo" class="cv-timeline__logo">
       </div>
       <div class="cv-timeline__content">
-        <span class="cv-timeline__date">Jan 2026 - Present</span>
-        <h3>NSERC Postdoctoral Fellow</h3>
+        <span class="cv-timeline__date">Jan 2026 - Jun 2026</span>
+        <h3>Visiting NSERC PDF</h3>
         <p class="cv-timeline__org">IISc Bengaluru</p>
         <ul>
-          <li>Working on automated scientific discovery and AI for science projects.</li>
+          <li>AI for scientific discovery.</li>
         </ul>
       </div>
     </div>
