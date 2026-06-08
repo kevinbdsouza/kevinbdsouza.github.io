@@ -21,7 +21,7 @@ Work experience
         <img src="/images/symbolia.png" alt="Symbolia Labs logo" class="cv-timeline__logo">
       </div>
       <div class="cv-timeline__content">
-        <span class="cv-timeline__date">Feb 2026 - Present</span>
+        <span class="cv-timeline__date">Jan 2026 - Present</span>
         <h3>Founder</h3>
         <p class="cv-timeline__org"><a href="https://platforms.symbolialabs.com/">Symbolia Labs</a></p>
         <ul>
