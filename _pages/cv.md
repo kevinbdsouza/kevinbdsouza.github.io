@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
  
-Primarily, I'm an AI engineer and researcher, helping organizations and businesses become AI native. I'm also the founder of <a href="https://platforms.symbolialabs.com/"><u>Symbolia Labs</u></a>, where we build AI-native platforms for science, health, climate, and public-good innovation. Previously, I was a researcher at the University of Waterloo working at the intersection of AI and science. Before that, I worked in AI for Biology. I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. For my Ph.D., I designed <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>representations for Biology</u></a>, working with <a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>.  
+Primarily, I'm an AI engineer and researcher, helping organizations and businesses become AI native. I'm also the founder of <a href="https://platforms.symbolialabs.com/"><u>Symbolia Labs</u></a>, where we build AI-native platforms for science, health, climate, and enterprise. Previously, I was a researcher at the University of Waterloo working at the intersection of AI and science. Before that, I worked in AI for Biology. I was a ML engineer at <a href="https://www.gandeeva.com/"><u>Gandeeva Therapeutics</u></a>, where I designed proteins and <a href="https://kevinbdsouza.github.io/posts/2023/07/developments-in-ml-for-antibody-design"><u>antibodies</u></a>. For my Ph.D., I designed <a href="https://www.nature.com/articles/s41467-022-31337-w"><u>representations for Biology</u></a>, working with <a href="https://www.libbrechtlab.com"><u>Libbrecht lab</u></a>.  
 
 Work experience
 ======
@@ -25,7 +25,7 @@ Work experience
         <h3>Founder</h3>
         <p class="cv-timeline__org"><a href="https://platforms.symbolialabs.com/">Symbolia Labs</a></p>
         <ul>
-          <li>Building AI-native platforms for science, health, climate, and public-good innovation.</li>
+          <li>Building AI-native platforms for science, health, climate, and enterprise.</li>
           <li>Working with enterprises to deploy custom AI solutions for their workflows.</li>
         </ul>
       </div>
